@@ -1,0 +1,533 @@
+[
+  {
+    "id": "4",
+    "statement": "so, the minuend is 6k0l, which means 6000 + k*100 + 0*10 + l*1.",
+    "category": "Reasoning",
+    "explanation": "Context-dependent mathematical reasoning; not externally verifiable.",
+    "confidence": 0.94,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "5",
+    "statement": "the subtrahend is m9n4, which is m*1000 + 9*100 + n*10 + 4*1.",
+    "category": "Reasoning",
+    "explanation": "Context-dependent mathematical reasoning; not externally verifiable.",
+    "confidence": 0.94,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "6",
+    "statement": "the difference is 2011.",
+    "category": "Reasoning",
+    "explanation": "Problem premise; not an external fact.",
+    "confidence": 0.93,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "7",
+    "statement": "let me write that in equation form:\n\n6000 + 100k + 0*10 + l - (1000m + 900 + 10n + 4) = 2011\n\nsimplify that:\n\n6000 + 100k + l - 1000m - 900 - 10n - 4 = 2011\n\ncombine like terms:\n\n(6000 - 900 - 4) + 100k + l - 1000m - 10n = 2011  \n5096 + 100k + l - 1000m - 10n = 2011\n\nnow, rearrange to group like terms:\n\n100k + l - 10n - 1000m = 2011 - 5096  \n100k + l - 10n - 1000m = -3085\n\nhmm, that seems a bit messy.",
+    "category": "Reasoning",
+    "explanation": "Local algebraic manipulation within a puzzle context.",
+    "confidence": 0.94,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "10",
+    "statement": "starting with the units place:\n\nl - 4 = 1\n\nbut, since l is a digit from 0 to 9, l - 4 should give me 1, but if l is less than 4, i would need to borrow from the tens place.",
+    "category": "Reasoning",
+    "explanation": "Step in a puzzle-specific subtraction reasoning.",
+    "confidence": 0.94,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "11",
+    "statement": "so, first, is l - 4 = 1?",
+    "category": "Reasoning",
+    "explanation": "Intermediate inference within the problem context.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "12",
+    "statement": "then l = 5.",
+    "category": "Reasoning",
+    "explanation": "Derived value from puzzle arithmetic.",
+    "confidence": 0.93,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "13",
+    "statement": "alternatively, if i borrow, then l + 10 - 4 = 1, so l = -9, which doesn't make sense because l is a digit.",
+    "category": "Reasoning",
+    "explanation": "Counterfactual reasoning within the puzzle constraints.",
+    "confidence": 0.93,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "14",
+    "statement": "so, l must be 5.",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 12.",
+    "confidence": 0.93,
+    "duplicate_of": "12",
+    "fact_check_content": null
+  },
+  {
+    "id": "15",
+    "statement": "okay, so l = 5.",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 12.",
+    "confidence": 0.93,
+    "duplicate_of": "12",
+    "fact_check_content": null
+  },
+  {
+    "id": "16",
+    "statement": "now, move to the tens place:\n\n0 - n = 1\n\nagain, 0 - n should be 1, but 0 - n can't be positive unless i borrow from the hundreds place.",
+    "category": "Reasoning",
+    "explanation": "Puzzle-specific borrowing logic; context-dependent.",
+    "confidence": 0.94,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "17",
+    "statement": "so, i need to borrow from the hundreds place.",
+    "category": "Reasoning",
+    "explanation": "Inference about subtraction borrowing within the puzzle.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "18",
+    "statement": "that means the 0 becomes 10, and the hundreds digit decreases by 1.",
+    "category": "Reasoning",
+    "explanation": "Borrowing step in positional subtraction reasoning.",
+    "confidence": 0.93,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "19",
+    "statement": "so, 10 - n = 1, which implies n = 9.",
+    "category": "Reasoning",
+    "explanation": "Derived digit from puzzle subtraction.",
+    "confidence": 0.93,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "20",
+    "statement": "wait a minute, if n = 9, then in the hundreds place, we have k - 1 (because we borrowed 1) - 9 = 0.",
+    "category": "Reasoning",
+    "explanation": "Intermediate constraint in the puzzle's arithmetic.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "22",
+    "statement": "in the hundreds place:\n\nafter borrowing, the hundreds digit is k - 1, and we have (k - 1) - 9 = 0.",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 20.",
+    "confidence": 0.92,
+    "duplicate_of": "20",
+    "fact_check_content": null
+  },
+  {
+    "id": "23",
+    "statement": "so, k - 1 - 9 = 0 \u2192 k - 10 = 0 \u2192 k = 10.",
+    "category": "Reasoning",
+    "explanation": "Derived equation and conclusion within the puzzle.",
+    "confidence": 0.93,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "28",
+    "statement": "we have 0 - n = 1, but since 0 < n, we have to borrow from the hundreds place.",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 16.",
+    "confidence": 0.94,
+    "duplicate_of": "16",
+    "fact_check_content": null
+  },
+  {
+    "id": "29",
+    "statement": "so, we add 10 to the 0, making it 10, and subtract 1 from the hundreds digit.",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 18.",
+    "confidence": 0.93,
+    "duplicate_of": "18",
+    "fact_check_content": null
+  },
+  {
+    "id": "30",
+    "statement": "so, 10 - n = 1 ?",
+    "category": "Reasoning",
+    "explanation": "Hypothetical step in puzzle subtraction.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "31",
+    "statement": "n = 9.",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 19.",
+    "confidence": 0.93,
+    "duplicate_of": "19",
+    "fact_check_content": null
+  },
+  {
+    "id": "32",
+    "statement": "now, in the hundreds place, originally k, but we borrowed 1, so it's k - 1.",
+    "category": "Reasoning",
+    "explanation": "Intermediate deduction in the puzzle's borrowing steps.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "33",
+    "statement": "now, (k - 1) - 9 = 1, because the difference in the hundreds place is 0 in 2011, but wait, 2011 has 0 in the hundreds place.",
+    "category": "Reasoning",
+    "explanation": "Conflicted intermediate reasoning within the puzzle.",
+    "confidence": 0.9,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "36",
+    "statement": "l = 5 (since no borrowing needed would give l = 5)\n\nthen, tens place:\n\n0 - n = 1, but since 0 < n, we borrow 1 from the hundreds place.",
+    "category": "Reasoning",
+    "explanation": "Composite deduction steps within the puzzle.",
+    "confidence": 0.93,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "37",
+    "statement": "so, 10 - n = 1 ?",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 30.",
+    "confidence": 0.92,
+    "duplicate_of": "30",
+    "fact_check_content": null
+  },
+  {
+    "id": "38",
+    "statement": "n = 9.",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 19.",
+    "confidence": 0.93,
+    "duplicate_of": "19",
+    "fact_check_content": null
+  },
+  {
+    "id": "39",
+    "statement": "now, in the hundreds place:\n\nk - 1 (because we borrowed 1) - 9 = 1.",
+    "category": "Reasoning",
+    "explanation": "Intermediate arithmetic constraint derived within the puzzle.",
+    "confidence": 0.91,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "41",
+    "statement": "because the difference in the hundreds place is 0 in 2011.",
+    "category": "Reasoning",
+    "explanation": "Justification tied to the puzzle's target number.",
+    "confidence": 0.9,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "44",
+    "statement": "m 9 n 4  \n= 2 0 1 1\n\nso, starting from the right:\n\nunits: l - 4 = 1 ?",
+    "category": "Reasoning",
+    "explanation": "Problem-specific setup and inference.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "45",
+    "statement": "l = 5\n\ntens: 0 - n = 1 ?",
+    "category": "Reasoning",
+    "explanation": "Composite deductions in the puzzle context.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "46",
+    "statement": "need to borrow, so 10 - n = 1 ?",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 30.",
+    "confidence": 0.92,
+    "duplicate_of": "30",
+    "fact_check_content": null
+  },
+  {
+    "id": "47",
+    "statement": "n = 9\n\nhundreds: (k - 1) - 9 = 0 ?",
+    "category": "Reasoning",
+    "explanation": "Composite inference about digits within the puzzle.",
+    "confidence": 0.91,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "48",
+    "statement": "k - 10 = 0 ?",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 23.",
+    "confidence": 0.93,
+    "duplicate_of": "23",
+    "fact_check_content": null
+  },
+  {
+    "id": "53",
+    "statement": "so, in the hundreds place, if k - 1 - 9 is not enough, maybe i need to borrow from the thousands place.",
+    "category": "Reasoning",
+    "explanation": "Hypothetical step within the puzzle\u2019s borrowing logic.",
+    "confidence": 0.91,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "54",
+    "statement": "so, the thousands digit is 6, and m is being subtracted.",
+    "category": "Reasoning",
+    "explanation": "Restating puzzle structure; context-dependent.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "55",
+    "statement": "let me consider the thousands place:\n\n6 - m = 2 ?",
+    "category": "Reasoning",
+    "explanation": "Intermediate constraint proposed within the puzzle.",
+    "confidence": 0.91,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "56",
+    "statement": "m = 4\n\nokay, so m = 4.",
+    "category": "Reasoning",
+    "explanation": "Derived digit from puzzle arithmetic.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "58",
+    "statement": "since m = 4, and 6 - 4 = 2 in the thousands place, and we have k in the hundreds place.",
+    "category": "Reasoning",
+    "explanation": "Follow-up reasoning based on derived digit.",
+    "confidence": 0.91,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "59",
+    "statement": "but earlier, i had k - 1 - 9 = 0 ?",
+    "category": "Reasoning",
+    "explanation": "Recalling an intermediate equation in the puzzle.",
+    "confidence": 0.9,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "62",
+    "statement": "wait, maybe i need to consider that in the hundreds place, after borrowing, it's (k + 10 - 1) - 9 = 1.",
+    "category": "Reasoning",
+    "explanation": "Alternative borrowing scenario within the puzzle.",
+    "confidence": 0.9,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "65",
+    "statement": "we have 6k05 - 49n4 = 2011\n\nwait, since l = 5 and n = 9, and m = 4.",
+    "category": "Reasoning",
+    "explanation": "Applying derived digits to the puzzle expression.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "66",
+    "statement": "so, 6k05 - 4994 = 2011\n\nlet's check if that's correct.",
+    "category": "Reasoning",
+    "explanation": "Substitution within the puzzle; verification step.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "67",
+    "statement": "6k05 - 4994 = 2011\n\nso, 6k05 - 4994 = 2011\n\nlet me compute 6k05 - 4994.",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 66.",
+    "confidence": 0.92,
+    "duplicate_of": "66",
+    "fact_check_content": null
+  },
+  {
+    "id": "68",
+    "statement": "first, subtract 4994 from 6k05.",
+    "category": "Reasoning",
+    "explanation": "Instructional step for the puzzle computation.",
+    "confidence": 0.91,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "70",
+    "statement": "start from the units place:\n\n5 - 4 = 1 (matches the units digit of 2011)\n\ntens place:\n\n0 - 9, can't do that, so borrow 1 from the hundreds place.",
+    "category": "Reasoning",
+    "explanation": "Step-by-step subtraction within the puzzle.",
+    "confidence": 0.93,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "71",
+    "statement": "so, 10 - 9 = 1 (matches the tens digit of 2011)\n\nhundreds place:\n\n(k - 1) - 9, but earlier this gave k - 10 = 0 ?",
+    "category": "Reasoning",
+    "explanation": "Intermediate computation and reflection within the puzzle.",
+    "confidence": 0.91,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "72",
+    "statement": "k = 10, which is not possible.",
+    "category": "Reasoning",
+    "explanation": "Conclusion about digit feasibility within puzzle constraints.",
+    "confidence": 0.91,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "77",
+    "statement": "6 - 4 = 2 (matches the thousands digit of 2011)\n\nnow, in the hundreds place, if i've already borrowed from the thousands place, then the hundreds digit is k - 1 - 9 = 0.",
+    "category": "Reasoning",
+    "explanation": "Borrowing logic spanning thousands and hundreds places.",
+    "confidence": 0.91,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "78",
+    "statement": "so, k - 10 = 0 ?",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 23.",
+    "confidence": 0.93,
+    "duplicate_of": "23",
+    "fact_check_content": null
+  },
+  {
+    "id": "82",
+    "statement": "we have m = 4, n = 9, l = 5.",
+    "category": "Reasoning",
+    "explanation": "Summary of derived digits within the puzzle.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "83",
+    "statement": "so, the subtraction is:\n\n6 k 0 5",
+    "category": "Reasoning",
+    "explanation": "Restating the puzzle numbers with derived digits.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "84",
+    "statement": "4 9 9 4  \n= 2 0 1 1\n\nnow, let's perform the subtraction step by step.",
+    "category": "Reasoning",
+    "explanation": "Setup for step-by-step computation within the puzzle.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "85",
+    "statement": "starting from the units place:\n\n5 - 4 = 1 (correct)\n\ntens place:\n\n0 - 9, can't do that, so borrow 1 from the hundreds place.",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 70.",
+    "confidence": 0.93,
+    "duplicate_of": "70",
+    "fact_check_content": null
+  },
+  {
+    "id": "86",
+    "statement": "so, 10 - 9 = 1 (correct)\n\nhundreds place:\n\n(k - 1) - 9 = 0 ?",
+    "category": "Reasoning",
+    "explanation": "Intermediate computation and constraint within the puzzle.",
+    "confidence": 0.91,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "87",
+    "statement": "k - 10 = 0 ?",
+    "category": "Reasoning",
+    "explanation": "Semantic duplicate of 23.",
+    "confidence": 0.93,
+    "duplicate_of": "23",
+    "fact_check_content": null
+  },
+  {
+    "id": "91",
+    "statement": "so, if i borrow 1 from the thousands place, the hundreds digit becomes k + 10 - 1 = k + 9, and then subtract 9.",
+    "category": "Reasoning",
+    "explanation": "Alternative borrowing path within the puzzle reasoning.",
+    "confidence": 0.91,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "92",
+    "statement": "so, (k + 9) - 9 = k = 0 (from the difference in the hundreds place of 2011)\n\nso, k = 0\n\nbut wait, if k = 0, then in the thousands place, 6 - 4 = 2 (correct)\n\nnow, check the hundreds place:\n\nsince we borrowed 1 from the thousands place, k (which is 0) becomes 0 + 10 - 1 = 9, and then 9 - 9 = 0 (matches the hundreds digit of 2011)\n\nokay, that makes sense.",
+    "category": "Reasoning",
+    "explanation": "Derived conclusion via borrowing logic within the puzzle.",
+    "confidence": 0.92,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "93",
+    "statement": "so, k = 0\n\nthen, m = 4, n = 9, l = 5\n\ntherefore, k + l + m + n = 0 + 5 + 4 + 9 = 18\n\nso, the answer should be 18.",
+    "category": "Reasoning",
+    "explanation": "Final computed result from puzzle reasoning.",
+    "confidence": 0.93,
+    "duplicate_of": null,
+    "fact_check_content": null
+  },
+  {
+    "id": "96",
+    "statement": "therefore, the sum of k + l + m + n is 18.",
+    "category": "Reasoning",
+    "explanation": "Restating the computed result; context-dependent.",
+    "confidence": 0.93,
+    "duplicate_of": null,
+    "fact_check_content": null
+  }
+]

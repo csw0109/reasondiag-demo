@@ -1,0 +1,915 @@
+[
+  {
+    "id": "4",
+    "sentence": "so, the minuend is 6k0l, which means 6000 + k*100 + 0*10 + l*1.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "5",
+    "sentence": "the subtrahend is m9n4, which is m*1000 + 9*100 + n*10 + 4*1.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "6",
+    "sentence": "the difference is 2011.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "7",
+    "sentence": "let me write that in equation form:\n\n6000 + 100k + 0*10 + l - (1000m + 900 + 10n + 4) = 2011\n\nsimplify that:\n\n6000 + 100k + l - 1000m - 900 - 10n - 4 = 2011\n\ncombine like terms:\n\n(6000 - 900 - 4) + 100k + l - 1000m - 10n = 2011  \n5096 + 100k + l - 1000m - 10n = 2011\n\nnow, rearrange to group like terms:\n\n100k + l - 10n - 1000m = 2011 - 5096  \n100k + l - 10n - 1000m = -3085\n\nhmm, that seems a bit messy.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "10",
+    "sentence": "starting with the units place:\n\nl - 4 = 1\n\nbut, since l is a digit from 0 to 9, l - 4 should give me 1, but if l is less than 4, i would need to borrow from the tens place.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "11",
+    "sentence": "so, first, is l - 4 = 1?",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "12",
+    "sentence": "then l = 5.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "13",
+    "sentence": "alternatively, if i borrow, then l + 10 - 4 = 1, so l = -9, which doesn't make sense because l is a digit.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "14",
+    "sentence": "so, l must be 5.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "15",
+    "sentence": "okay, so l = 5.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "16",
+    "sentence": "now, move to the tens place:\n\n0 - n = 1\n\nagain, 0 - n should be 1, but 0 - n can't be positive unless i borrow from the hundreds place.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "17",
+    "sentence": "so, i need to borrow from the hundreds place.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Not checked",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "18",
+    "sentence": "that means the 0 becomes 10, and the hundreds digit decreases by 1.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "19",
+    "sentence": "so, 10 - n = 1, which implies n = 9.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "20",
+    "sentence": "wait a minute, if n = 9, then in the hundreds place, we have k - 1 (because we borrowed 1) - 9 = 0.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "20",
+        "target": "22"
+      },
+      {
+        "source": "20",
+        "target": "23"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "sentence": "in the hundreds place:\n\nafter borrowing, the hundreds digit is k - 1, and we have (k - 1) - 9 = 0.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 1,
+    "prop_pairs": [
+      {
+        "source": "22",
+        "target": "23"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "sentence": "so, k - 1 - 9 = 0 \u2192 k - 10 = 0 \u2192 k = 10.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "20"
+  },
+  {
+    "id": "28",
+    "sentence": "we have 0 - n = 1, but since 0 < n, we have to borrow from the hundreds place.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "29",
+    "sentence": "so, we add 10 to the 0, making it 10, and subtract 1 from the hundreds digit.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "30",
+    "sentence": "so, 10 - n = 1 ?",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "31",
+    "sentence": "n = 9.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "32",
+    "sentence": "now, in the hundreds place, originally k, but we borrowed 1, so it's k - 1.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "33",
+    "sentence": "now, (k - 1) - 9 = 1, because the difference in the hundreds place is 0 in 2011, but wait, 2011 has 0 in the hundreds place.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": []
+  },
+  {
+    "id": "36",
+    "sentence": "l = 5 (since no borrowing needed would give l = 5)\n\nthen, tens place:\n\n0 - n = 1, but since 0 < n, we borrow 1 from the hundreds place.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "37",
+    "sentence": "so, 10 - n = 1 ?",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "38",
+    "sentence": "n = 9.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "39",
+    "sentence": "now, in the hundreds place:\n\nk - 1 (because we borrowed 1) - 9 = 1.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": []
+  },
+  {
+    "id": "41",
+    "sentence": "because the difference in the hundreds place is 0 in 2011.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "44",
+    "sentence": "m 9 n 4  \n= 2 0 1 1\n\nso, starting from the right:\n\nunits: l - 4 = 1 ?",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "45",
+    "sentence": "l = 5\n\ntens: 0 - n = 1 ?",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "45",
+        "target": "46"
+      },
+      {
+        "source": "45",
+        "target": "47"
+      },
+      {
+        "source": "45",
+        "target": "48"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "sentence": "need to borrow, so 10 - n = 1 ?",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "45"
+  },
+  {
+    "id": "47",
+    "sentence": "n = 9\n\nhundreds: (k - 1) - 9 = 0 ?",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "47",
+        "target": "48"
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "sentence": "k - 10 = 0 ?",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 1,
+    "prop_pairs": []
+  },
+  {
+    "id": "53",
+    "sentence": "so, in the hundreds place, if k - 1 - 9 is not enough, maybe i need to borrow from the thousands place.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Not checked",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "54",
+    "sentence": "so, the thousands digit is 6, and m is being subtracted.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "55",
+    "sentence": "let me consider the thousands place:\n\n6 - m = 2 ?",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "55",
+        "target": "56"
+      },
+      {
+        "source": "55",
+        "target": "58"
+      },
+      {
+        "source": "55",
+        "target": "65"
+      },
+      {
+        "source": "55",
+        "target": "82"
+      },
+      {
+        "source": "55",
+        "target": "93"
+      },
+      {
+        "source": "55",
+        "target": "59"
+      },
+      {
+        "source": "55",
+        "target": "66"
+      },
+      {
+        "source": "55",
+        "target": "83"
+      },
+      {
+        "source": "55",
+        "target": "94"
+      },
+      {
+        "source": "55",
+        "target": "96"
+      },
+      {
+        "source": "55",
+        "target": "67"
+      },
+      {
+        "source": "55",
+        "target": "84"
+      },
+      {
+        "source": "55",
+        "target": "95"
+      },
+      {
+        "source": "55",
+        "target": "97"
+      },
+      {
+        "source": "55",
+        "target": "68"
+      },
+      {
+        "source": "55",
+        "target": "85"
+      },
+      {
+        "source": "55",
+        "target": "86"
+      },
+      {
+        "source": "55",
+        "target": "87"
+      }
+    ]
+  },
+  {
+    "id": "56",
+    "sentence": "m = 4\n\nokay, so m = 4.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 1,
+    "prop_pairs": [
+      {
+        "source": "56",
+        "target": "58"
+      },
+      {
+        "source": "56",
+        "target": "65"
+      },
+      {
+        "source": "56",
+        "target": "82"
+      },
+      {
+        "source": "56",
+        "target": "93"
+      },
+      {
+        "source": "56",
+        "target": "59"
+      },
+      {
+        "source": "56",
+        "target": "66"
+      },
+      {
+        "source": "56",
+        "target": "83"
+      },
+      {
+        "source": "56",
+        "target": "94"
+      },
+      {
+        "source": "56",
+        "target": "96"
+      },
+      {
+        "source": "56",
+        "target": "67"
+      },
+      {
+        "source": "56",
+        "target": "84"
+      },
+      {
+        "source": "56",
+        "target": "95"
+      },
+      {
+        "source": "56",
+        "target": "97"
+      },
+      {
+        "source": "56",
+        "target": "68"
+      },
+      {
+        "source": "56",
+        "target": "85"
+      },
+      {
+        "source": "56",
+        "target": "86"
+      },
+      {
+        "source": "56",
+        "target": "87"
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "sentence": "since m = 4, and 6 - 4 = 2 in the thousands place, and we have k in the hundreds place.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 2,
+    "prop_pairs": [
+      {
+        "source": "58",
+        "target": "59"
+      }
+    ]
+  },
+  {
+    "id": "59",
+    "sentence": "but earlier, i had k - 1 - 9 = 0 ?",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 3,
+    "prop_pairs": []
+  },
+  {
+    "id": "62",
+    "sentence": "wait, maybe i need to consider that in the hundreds place, after borrowing, it's (k + 10 - 1) - 9 = 1.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": []
+  },
+  {
+    "id": "65",
+    "sentence": "we have 6k05 - 49n4 = 2011\n\nwait, since l = 5 and n = 9, and m = 4.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "55"
+  },
+  {
+    "id": "66",
+    "sentence": "so, 6k05 - 4994 = 2011\n\nlet's check if that's correct.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 3,
+    "error_source": "55"
+  },
+  {
+    "id": "67",
+    "sentence": "6k05 - 4994 = 2011\n\nso, 6k05 - 4994 = 2011\n\nlet me compute 6k05 - 4994.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "67",
+        "target": "68"
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "sentence": "first, subtract 4994 from 6k05.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Inconclusive",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "67"
+  },
+  {
+    "id": "70",
+    "sentence": "start from the units place:\n\n5 - 4 = 1 (matches the units digit of 2011)\n\ntens place:\n\n0 - 9, can't do that, so borrow 1 from the hundreds place.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "71",
+    "sentence": "so, 10 - 9 = 1 (matches the tens digit of 2011)\n\nhundreds place:\n\n(k - 1) - 9, but earlier this gave k - 10 = 0 ?",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "77",
+    "sentence": "6 - 4 = 2 (matches the thousands digit of 2011)\n\nnow, in the hundreds place, if i've already borrowed from the thousands place, then the hundreds digit is k - 1 - 9 = 0.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "78",
+    "sentence": "so, k - 10 = 0 ?",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": []
+  },
+  {
+    "id": "82",
+    "sentence": "we have m = 4, n = 9, l = 5.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "55"
+  },
+  {
+    "id": "83",
+    "sentence": "so, the subtraction is:\n\n6 k 0 5",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 3,
+    "error_source": "55"
+  },
+  {
+    "id": "84",
+    "sentence": "4 9 9 4  \n= 2 0 1 1\n\nnow, let's perform the subtraction step by step.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "84",
+        "target": "85"
+      },
+      {
+        "source": "84",
+        "target": "86"
+      },
+      {
+        "source": "84",
+        "target": "87"
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "sentence": "starting from the units place:\n\n5 - 4 = 1 (correct)\n\ntens place:\n\n0 - 9, can't do that, so borrow 1 from the hundreds place.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "84"
+  },
+  {
+    "id": "86",
+    "sentence": "so, 10 - 9 = 1 (correct)\n\nhundreds place:\n\n(k - 1) - 9 = 0 ?",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "86",
+        "target": "87"
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "sentence": "k - 10 = 0 ?",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Error",
+    "has_error": true,
+    "error_type": [
+      "LogicError"
+    ],
+    "propagation_layer": 1,
+    "prop_pairs": []
+  },
+  {
+    "id": "91",
+    "sentence": "so, if i borrow 1 from the thousands place, the hundreds digit becomes k + 10 - 1 = k + 9, and then subtract 9.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "92",
+    "sentence": "so, (k + 9) - 9 = k = 0 (from the difference in the hundreds place of 2011)\n\nso, k = 0\n\nbut wait, if k = 0, then in the thousands place, 6 - 4 = 2 (correct)\n\nnow, check the hundreds place:\n\nsince we borrowed 1 from the thousands place, k (which is 0) becomes 0 + 10 - 1 = 9, and then 9 - 9 = 0 (matches the hundreds digit of 2011)\n\nokay, that makes sense.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "93",
+    "sentence": "so, k = 0\n\nthen, m = 4, n = 9, l = 5\n\ntherefore, k + l + m + n = 0 + 5 + 4 + 9 = 18\n\nso, the answer should be 18.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "55"
+  },
+  {
+    "id": "96",
+    "sentence": "therefore, the sum of k + l + m + n is 18.",
+    "has_fact_check": true,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 3,
+    "error_source": "55"
+  },
+  {
+    "id": "97",
+    "sentence": "**final answer**\n\n \boxed{18}",
+    "has_fact_check": false,
+    "has_logic_check": true,
+    "fact_check_result": "Not checked",
+    "logic_check_result": "Correct",
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 4,
+    "error_source": "55"
+  }
+]

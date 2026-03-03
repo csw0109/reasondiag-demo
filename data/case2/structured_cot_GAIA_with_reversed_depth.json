@@ -1,0 +1,3567 @@
+[
+  {
+    "sentence": "I need to find out how many at-bats the Yankee with the most walks in the 1977 regular season had that same season.",
+    "index": 0,
+    "function_tag": "plan_generation",
+    "id": "0",
+    "premise_id": [],
+    "depth": 0,
+    "function_tags": [
+      "problem_setup",
+      "plan_generation"
+    ],
+    "abstract": "Define task: find AB of walk leader",
+    "title": "Identifying Walk Leader",
+    "text": "I need to find out how many at-bats the Yankee with the most walks in the 1977 regular season had that same season.",
+    "all_function_tags": [
+      "problem_setup",
+      "plan_generation"
+    ],
+    "reverse_depth": 16,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "First, I need the data for the 1977 New York Yankees players, specifically their walks and at-bats.",
+    "index": 1,
+    "function_tag": "plan_generation",
+    "id": "1",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "abstract": "Identify needed Yankees stats",
+    "title": "Yankees Stats Analysis",
+    "text": "First, I need the data for the 1977 New York Yankees players, specifically their walks and at-bats.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": 15,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I don't have this data memorized, so I might need to look it up or recall some key players.",
+    "index": 2,
+    "function_tag": "uncertainty_management",
+    "id": "2",
+    "premise_id": [],
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "1"
+    ],
+    "abstract": "Lack data; may look up",
+    "text": "I don't have this data memorized, so I might need to look it up or recall some key players.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": 14,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Since this is a reasoning exercise, I should think about who might have had the most walks.",
+    "index": 3,
+    "function_tag": "plan_generation",
+    "id": "3",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Hypothesizing Walk Leader",
+    "abstract": "Potential Walk Leaders",
+    "text": "Since this is a reasoning exercise, I should think about who might have had the most walks.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": 13,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "The Yankees in 1977 had some famous players like Reggie Jackson, Thurman Munson, Graig Nettles, and Chris Chambliss.",
+    "index": 4,
+    "function_tag": "fact_retrieval",
+    "id": "4",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Recall notable 1977 Yankees",
+    "text": "The Yankees in 1977 had some famous players like Reggie Jackson, Thurman Munson, Graig Nettles, and Chris Chambliss.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 12,
+    "is_non_statement": false,
+    "pagerank": 0.024991209010278737
+  },
+  {
+    "sentence": "Also, Mickey Rivers and Willie Randolph.",
+    "index": 5,
+    "function_tag": "fact_retrieval",
+    "id": "5",
+    "premise_id": [
+      "4"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Add players list",
+    "text": "Also, Mickey Rivers and Willie Randolph.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.007562773696907813
+  },
+  {
+    "sentence": "I think Reggie Jackson was known for drawing walks, and he had a high on-base percentage.",
+    "index": 6,
+    "function_tag": "fact_retrieval",
+    "id": "6",
+    "premise_id": [
+      "4"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Reggie known for walks",
+    "text": "I think Reggie Jackson was known for drawing walks, and he had a high on-base percentage.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 11,
+    "is_non_statement": false,
+    "pagerank": 0.012894690763378472
+  },
+  {
+    "sentence": "Let me try to recall or estimate.",
+    "index": 7,
+    "function_tag": "uncertainty_management",
+    "id": "7",
+    "premise_id": [],
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "3"
+    ],
+    "abstract": "Try recall or estimate",
+    "text": "Let me try to recall or estimate.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Perhaps I can think about the team statistics or remember specific players.",
+    "index": 8,
+    "function_tag": "plan_generation",
+    "id": "8",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Team Statistics Evaluation",
+    "abstract": "Consider team stats approach",
+    "text": "Perhaps I can think about the team statistics or remember specific players.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I know that the 1977 Yankees won the World Series, and Reggie Jackson was the MVP of that series, but for walks, I'm not sure.",
+    "index": 9,
+    "function_tag": "fact_retrieval",
+    "id": "9",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "World Series note; unsure walks",
+    "text": "I know that the 1977 Yankees won the World Series, and Reggie Jackson was the MVP of that series, but for walks, I'm not sure.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Another player: Lou Piniella?",
+    "index": 10,
+    "function_tag": "fact_retrieval",
+    "id": "10",
+    "premise_id": [
+      "4"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Consider Lou Piniella",
+    "text": "Another player: Lou Piniella?",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.00461292782366492
+  },
+  {
+    "sentence": "But I don't think he walked a lot.",
+    "index": 11,
+    "function_tag": "fact_retrieval",
+    "id": "11",
+    "premise_id": [
+      "10"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Piniella not walk-heavy",
+    "text": "But I don't think he walked a lot.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Willie Randolph was a second baseman who had good on-base skills.",
+    "index": 12,
+    "function_tag": "fact_retrieval",
+    "id": "12",
+    "premise_id": [
+      "5"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Randolph OBP skills",
+    "text": "Willie Randolph was a second baseman who had good on-base skills.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0057054633207418975
+  },
+  {
+    "sentence": "I think he might have been among the leaders in walks.",
+    "index": 13,
+    "function_tag": "fact_retrieval",
+    "id": "13",
+    "premise_id": [
+      "12"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Randolph likely walked often",
+    "text": "I think he might have been among the leaders in walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Let me try to search my memory for the 1977 AL leaders in walks.",
+    "index": 14,
+    "function_tag": "plan_generation",
+    "id": "14",
+    "premise_id": [],
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Recalling AL Leaders",
+    "abstract": "Recall AL walk leaders",
+    "text": "Let me try to search my memory for the 1977 AL leaders in walks.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I think Rod Carew led the league in batting average, but walks?",
+    "index": 15,
+    "function_tag": "fact_retrieval",
+    "id": "15",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Carew BA; walks unclear",
+    "text": "I think Rod Carew led the league in batting average, but walks?",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.00461292782366492
+  },
+  {
+    "sentence": "I think Jim Rice or someone else.",
+    "index": 16,
+    "function_tag": "fact_retrieval",
+    "id": "16",
+    "premise_id": [
+      "15"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Maybe Jim Rice",
+    "text": "I think Jim Rice or someone else.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Actually, I recall that Reggie Jackson had 91 walks in 1977, but I'm not sure.",
+    "index": 17,
+    "function_tag": "fact_retrieval",
+    "id": "17",
+    "premise_id": [
+      "6"
+    ],
+    "function_tags": [
+      "fact_retrieval",
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "14"
+    ],
+    "abstract": "Recall Reggie 91 BB (uncertain)",
+    "text": "Actually, I recall that Reggie Jackson had 91 walks in 1977, but I'm not sure.",
+    "all_function_tags": [
+      "fact_retrieval",
+      "uncertainty_management"
+    ],
+    "reverse_depth": 10,
+    "is_non_statement": false,
+    "pagerank": 0.01041588394867608
+  },
+  {
+    "sentence": "I should consider that the question is about the Yankee with the most walks, so I need the team leader.",
+    "index": 18,
+    "function_tag": "plan_generation",
+    "id": "18",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Use PA/AB/BB relations",
+    "abstract": "Focus on Yankees leader",
+    "text": "I should consider that the question is about the Yankee with the most walks, so I need the team leader.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": 14,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Since I don't have the data, I might need to infer or look for a way.",
+    "index": 19,
+    "function_tag": "uncertainty_management",
+    "id": "19",
+    "premise_id": [],
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "18",
+      "1"
+    ],
+    "abstract": "May infer or lookup",
+    "text": "Since I don't have the data, I might need to infer or look for a way.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": 13,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Perhaps I can think about plate appearances, at-bats, walks, etc.",
+    "index": 20,
+    "function_tag": "plan_generation",
+    "id": "20",
+    "premise_id": [],
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Analyzing PA/AB/BB Relations",
+    "abstract": "Use PA/AB/BB relations",
+    "text": "Perhaps I can think about plate appearances, at-bats, walks, etc.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": 12,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "At-bats (AB) and walks (BB) are related.",
+    "index": 21,
+    "function_tag": "fact_retrieval",
+    "id": "21",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "AB and BB related",
+    "text": "At-bats (AB) and walks (BB) are related.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 11,
+    "is_non_statement": false,
+    "pagerank": 0.012712572630180425
+  },
+  {
+    "sentence": "Walks are not counted as at-bats.",
+    "index": 22,
+    "function_tag": "fact_retrieval",
+    "id": "22",
+    "premise_id": [
+      "21"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Walks not at-bats",
+    "text": "Walks are not counted as at-bats.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 10,
+    "is_non_statement": false,
+    "pagerank": 0.01142746224330236
+  },
+  {
+    "sentence": "So the number of plate appearances (PA) is AB + BB + other things like HBP, SH, SF, etc.",
+    "index": 23,
+    "function_tag": "fact_retrieval",
+    "id": "23",
+    "premise_id": [
+      "22"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "PA composition formula",
+    "text": "So the number of plate appearances (PA) is AB + BB + other things like HBP, SH, SF, etc.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 9,
+    "is_non_statement": false,
+    "pagerank": 0.009999560271743401
+  },
+  {
+    "sentence": "But for simplicity, PA ≈ AB + BB for many players, but not always, due to other factors.",
+    "index": 24,
+    "function_tag": "fact_retrieval",
+    "id": "24",
+    "premise_id": [
+      "23"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Approximate PA as AB+BB",
+    "text": "But for simplicity, PA ≈ AB + BB for many players, but not always, due to other factors.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 8,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "To find the at-bats for the player with the most walks, I first need to know who had the most walks.",
+    "index": 25,
+    "function_tag": "plan_generation",
+    "id": "25",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Listing Yankees Players",
+    "abstract": "Identify leader before AB",
+    "text": "To find the at-bats for the player with the most walks, I first need to know who had the most walks.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": 7,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Let me list the probable Yankees players from 1977:",
+    "index": 26,
+    "function_tag": "plan_generation",
+    "id": "26",
+    "premise_id": [],
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Listing Yankees Players",
+    "abstract": "List candidate players",
+    "text": "Let me list the probable Yankees players from 1977:",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": 6,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Thurman Munson, catcher",
+    "index": 27,
+    "function_tag": "fact_retrieval",
+    "id": "27",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Munson, catcher",
+    "text": "Thurman Munson, catcher",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 5,
+    "is_non_statement": false,
+    "pagerank": 0.012179665167073623
+  },
+  {
+    "sentence": "Reggie Jackson, right field",
+    "index": 28,
+    "function_tag": "fact_retrieval",
+    "id": "28",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Jackson, right field",
+    "text": "Reggie Jackson, right field",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 5,
+    "is_non_statement": false,
+    "pagerank": 0.06309435949667816
+  },
+  {
+    "sentence": "Chris Chambliss, first base",
+    "index": 29,
+    "function_tag": "fact_retrieval",
+    "id": "29",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Chambliss, first base",
+    "text": "Chris Chambliss, first base",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 5,
+    "is_non_statement": false,
+    "pagerank": 0.012179665167073623
+  },
+  {
+    "sentence": "Graig Nettles, third base",
+    "index": 30,
+    "function_tag": "fact_retrieval",
+    "id": "30",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Nettles, third base",
+    "text": "Graig Nettles, third base",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 5,
+    "is_non_statement": false,
+    "pagerank": 0.0168696980579281
+  },
+  {
+    "sentence": "Willie Randolph, second base",
+    "index": 31,
+    "function_tag": "fact_retrieval",
+    "id": "31",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Randolph, second base",
+    "text": "Willie Randolph, second base",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 5,
+    "is_non_statement": false,
+    "pagerank": 0.04176552695343869
+  },
+  {
+    "sentence": "Mickey Rivers, center field",
+    "index": 32,
+    "function_tag": "fact_retrieval",
+    "id": "32",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Rivers, center field",
+    "text": "Mickey Rivers, center field",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 5,
+    "is_non_statement": false,
+    "pagerank": 0.013155709090566375
+  },
+  {
+    "sentence": "Lou Piniella, left field or DH",
+    "index": 33,
+    "function_tag": "fact_retrieval",
+    "id": "33",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Piniella, LF or DH",
+    "text": "Lou Piniella, left field or DH",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0076829525797917474
+  },
+  {
+    "sentence": "Roy White, outfielder",
+    "index": 34,
+    "function_tag": "fact_retrieval",
+    "id": "34",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Roy White, outfielder",
+    "text": "Roy White, outfielder",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.013140167506586036
+  },
+  {
+    "sentence": "Bucky Dent, shortstop\n\nAmong these, who drew the most walks?",
+    "index": 35,
+    "function_tag": "fact_retrieval",
+    "id": "35",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval",
+      "plan_generation"
+    ],
+    "abstract": "Ask who walked most",
+    "text": "Bucky Dent, shortstop\n\nAmong these, who drew the most walks?",
+    "all_function_tags": [
+      "fact_retrieval",
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.010243172979235297
+  },
+  {
+    "sentence": "I think Reggie Jackson and Willie Randolph were both good at drawing walks.",
+    "index": 36,
+    "function_tag": "fact_retrieval",
+    "id": "36",
+    "premise_id": [
+      "28",
+      "31"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Reggie and Randolph walked",
+    "text": "I think Reggie Jackson and Willie Randolph were both good at drawing walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I recall that in 1977, Reggie Jackson had a .286 batting average with 32 home runs and 110 RBIs, and he had 91 walks.",
+    "index": 37,
+    "function_tag": "fact_retrieval",
+    "id": "37",
+    "premise_id": [
+      "28",
+      "17"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Recall Reggie: .286, 32 HR, 91 BB",
+    "text": "I recall that in 1977, Reggie Jackson had a .286 batting average with 32 home runs and 110 RBIs, and he had 91 walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 9,
+    "is_non_statement": false,
+    "pagerank": 0.017751164416019767
+  },
+  {
+    "sentence": "Willie Randolph had a .274 average with 36 walks or something?",
+    "index": 38,
+    "function_tag": "fact_retrieval",
+    "id": "38",
+    "premise_id": [
+      "31"
+    ],
+    "function_tags": [
+      "fact_retrieval",
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "36"
+    ],
+    "abstract": "Guess Randolph ~36 BB",
+    "text": "Willie Randolph had a .274 average with 36 walks or something?",
+    "all_function_tags": [
+      "fact_retrieval",
+      "uncertainty_management"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0045036742843355786
+  },
+  {
+    "sentence": "I'm not sure.",
+    "index": 39,
+    "function_tag": "uncertainty_management",
+    "id": "39",
+    "premise_id": [],
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "37",
+      "38"
+    ],
+    "abstract": "Admit uncertainty",
+    "text": "I'm not sure.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Perhaps I can think about the team totals.",
+    "index": 40,
+    "function_tag": "plan_generation",
+    "id": "40",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Considering Team Totals",
+    "abstract": "Consider team totals",
+    "text": "Perhaps I can think about the team totals.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I remember that the Yankees as a team had a high number of walks, but I need individual.",
+    "index": 41,
+    "function_tag": "fact_retrieval",
+    "id": "41",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Team walked a lot",
+    "text": "I remember that the Yankees as a team had a high number of walks, but I need individual.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Another idea: I know that Reggie Jackson was known for his high OBP, so he might have had many walks.",
+    "index": 42,
+    "function_tag": "fact_retrieval",
+    "id": "42",
+    "premise_id": [
+      "28",
+      "6"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Reggie OBP implies BB",
+    "text": "Another idea: I know that Reggie Jackson was known for his high OBP, so he might have had many walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "But let's see if I can find the answer by logic.",
+    "index": 43,
+    "function_tag": "plan_generation",
+    "id": "43",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Applying Logical Derivation",
+    "abstract": "Use logical derivation",
+    "text": "But let's see if I can find the answer by logic.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Perhaps the player with the most walks also had a lot of plate appearances, but not necessarily the most at-bats, since walks reduce at-bats.",
+    "index": 44,
+    "function_tag": "fact_retrieval",
+    "id": "44",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Walks lower AB given PA",
+    "text": "Perhaps the player with the most walks also had a lot of plate appearances, but not necessarily the most at-bats, since walks reduce at-bats.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 15,
+    "is_non_statement": false,
+    "pagerank": 0.004612927823664922
+  },
+  {
+    "sentence": "In fact, a player with many walks might have fewer at-bats than someone with the same plate appearances but fewer walks.",
+    "index": 45,
+    "function_tag": "fact_retrieval",
+    "id": "45",
+    "premise_id": [
+      "44"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "High BB fewer AB",
+    "text": "In fact, a player with many walks might have fewer at-bats than someone with the same plate appearances but fewer walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 14,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "But I need the at-bats for that specific player.",
+    "index": 46,
+    "function_tag": "uncertainty_management",
+    "id": "46",
+    "premise_id": [],
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "43",
+      "45"
+    ],
+    "title": "Specifying AB Requirement",
+    "abstract": "Need AB of leader",
+    "text": "But I need the at-bats for that specific player.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": 13,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I think I need actual data.",
+    "index": 47,
+    "function_tag": "uncertainty_management",
+    "id": "47",
+    "premise_id": [],
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "46"
+    ],
+    "abstract": "Need actual data",
+    "text": "I think I need actual data.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": 12,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Since this is a puzzle, maybe there's a trick or something, but I doubt it.",
+    "index": 48,
+    "function_tag": "uncertainty_management",
+    "id": "48",
+    "premise_id": [],
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "43",
+      "46"
+    ],
+    "abstract": "Consider trick possibility",
+    "text": "Since this is a puzzle, maybe there's a trick or something, but I doubt it.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": 11,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Perhaps I can look for the 1977 Yankees statistics online, but since this is a text-based reasoning, I should recall.",
+    "index": 49,
+    "function_tag": "plan_generation",
+    "id": "49",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Recalling Player Statistics",
+    "abstract": "Rely on memory recall",
+    "text": "Perhaps I can look for the 1977 Yankees statistics online, but since this is a text-based reasoning, I should recall.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": 10,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I recall that in 1977, the AL leader in walks was Ken Singleton with 123 walks, but he was with the Orioles.",
+    "index": 50,
+    "function_tag": "fact_retrieval",
+    "id": "50",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "AL leader Singleton 123 BB",
+    "text": "I recall that in 1977, the AL leader in walks was Ken Singleton with 123 walks, but he was with the Orioles.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 9,
+    "is_non_statement": false,
+    "pagerank": 0.008027375586002198
+  },
+  {
+    "sentence": "For the Yankees, I think it was Reggie Jackson with 91 walks.",
+    "index": 51,
+    "function_tag": "fact_retrieval",
+    "id": "51",
+    "premise_id": [
+      "50",
+      "37"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Reggie 91 for Yankees",
+    "text": "For the Yankees, I think it was Reggie Jackson with 91 walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 8,
+    "is_non_statement": false,
+    "pagerank": 0.007830445437805148
+  },
+  {
+    "sentence": "I think Thurman Munson had fewer walks; he was more of a contact hitter.",
+    "index": 52,
+    "function_tag": "fact_retrieval",
+    "id": "52",
+    "premise_id": [
+      "27"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Munson fewer BB",
+    "text": "I think Thurman Munson had fewer walks; he was more of a contact hitter.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0035203923265879474
+  },
+  {
+    "sentence": "Graig Nettles had power but not high walks.",
+    "index": 53,
+    "function_tag": "fact_retrieval",
+    "id": "53",
+    "premise_id": [
+      "30"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Nettles not high BB",
+    "text": "Graig Nettles had power but not high walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0035203923265879474
+  },
+  {
+    "sentence": "Chris Chambliss was similar.",
+    "index": 54,
+    "function_tag": "fact_retrieval",
+    "id": "54",
+    "premise_id": [
+      "29"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Chambliss similar profile",
+    "text": "Chris Chambliss was similar.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0035203923265879474
+  },
+  {
+    "sentence": "Willie Randolph: I think he had a good OBP, so he might have had more walks.",
+    "index": 55,
+    "function_tag": "fact_retrieval",
+    "id": "55",
+    "premise_id": [
+      "31",
+      "12"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Randolph might walk more",
+    "text": "Willie Randolph: I think he had a good OBP, so he might have had more walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Let me estimate.",
+    "index": 56,
+    "function_tag": "plan_generation",
+    "id": "56",
+    "premise_id": [],
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Estimating Walk Numbers",
+    "abstract": "Estimate values",
+    "text": "Let me estimate.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I found online in my memory that Willie Randolph had 119 walks in 1980, but in 1977, he was younger.",
+    "index": 57,
+    "function_tag": "fact_retrieval",
+    "id": "57",
+    "premise_id": [
+      "31"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Randolph 119 BB in 1980",
+    "text": "I found online in my memory that Willie Randolph had 119 walks in 1980, but in 1977, he was younger.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 11,
+    "is_non_statement": false,
+    "pagerank": 0.004612927823664922
+  },
+  {
+    "sentence": "In 1977, Willie Randolph had 70 walks or something?",
+    "index": 58,
+    "function_tag": "fact_retrieval",
+    "id": "58",
+    "premise_id": [
+      "57"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Randolph ~70 BB in 1977",
+    "text": "In 1977, Willie Randolph had 70 walks or something?",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 10,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I'm not sure.",
+    "index": 59,
+    "function_tag": "uncertainty_management",
+    "id": "59",
+    "premise_id": [],
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "58"
+    ],
+    "abstract": "Unsure Randolph walks",
+    "text": "I'm not sure.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": 9,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Perhaps Reggie Jackson led the team.",
+    "index": 60,
+    "function_tag": "fact_retrieval",
+    "id": "60",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Reggie likely led team",
+    "text": "Perhaps Reggie Jackson led the team.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 8,
+    "is_non_statement": false,
+    "pagerank": 0.007830445437805148
+  },
+  {
+    "sentence": "I think Reggie Jackson had 91 walks in 1977 for the Yankees.",
+    "index": 61,
+    "function_tag": "fact_retrieval",
+    "id": "61",
+    "premise_id": [
+      "60",
+      "51"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Reggie 91 BB in 1977",
+    "text": "I think Reggie Jackson had 91 walks in 1977 for the Yankees.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 7,
+    "is_non_statement": false,
+    "pagerank": 0.012005751494423041
+  },
+  {
+    "sentence": "Let me confirm with at-bats.",
+    "index": 62,
+    "function_tag": "plan_generation",
+    "id": "62",
+    "premise_id": [],
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Confirming At-Bats",
+    "abstract": "Confirm via AB check",
+    "text": "Let me confirm with at-bats.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": 6,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Reggie Jackson had 525 at-bats in 1977 with the Yankees.",
+    "index": 63,
+    "function_tag": "fact_retrieval",
+    "id": "63",
+    "premise_id": [
+      "28"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Claim: Reggie 525 AB",
+    "text": "Reggie Jackson had 525 at-bats in 1977 with the Yankees.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 5,
+    "is_non_statement": false,
+    "pagerank": 0.015404683459366192
+  },
+  {
+    "sentence": "Is that right?",
+    "index": 64,
+    "function_tag": "uncertainty_management",
+    "id": "64",
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "63"
+    ],
+    "abstract": "Verify AB claim",
+    "text": "Is that right?",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Let's calculate.",
+    "index": 65,
+    "function_tag": "plan_generation",
+    "id": "65",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Performing AB Calculation",
+    "abstract": "Perform calculation",
+    "text": "Let's calculate.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I know he had 143 games played, and he was a regular, so about 500-600 at-bats.",
+    "index": 66,
+    "function_tag": "fact_retrieval",
+    "id": "66",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Games and AB range",
+    "text": "I know he had 143 games played, and he was a regular, so about 500-600 at-bats.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.006389391080780437
+  },
+  {
+    "sentence": "Plate appearances: let's say he had around 600 PA.",
+    "index": 67,
+    "function_tag": "fact_retrieval",
+    "id": "67",
+    "premise_id": [
+      "66"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Assume ~600 PA",
+    "text": "Plate appearances: let's say he had around 600 PA.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004401704389102526
+  },
+  {
+    "sentence": "With 91 walks, then AB = PA - BB - other.",
+    "index": 68,
+    "function_tag": "active_computation",
+    "id": "68",
+    "premise_id": [
+      "67",
+      "23",
+      "61"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "AB = PA - BB - other",
+    "text": "With 91 walks, then AB = PA - BB - other.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.006579491739160184
+  },
+  {
+    "sentence": "Other might be small, so AB ≈ PA - 91.",
+    "index": 69,
+    "function_tag": "active_computation",
+    "id": "69",
+    "premise_id": [
+      "68"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Approximate AB = PA-91",
+    "text": "Other might be small, so AB ≈ PA - 91.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004612927823664924
+  },
+  {
+    "sentence": "If PA is say 600, AB ≈ 509.",
+    "index": 70,
+    "function_tag": "active_computation",
+    "id": "70",
+    "premise_id": [
+      "69"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Estimate AB ≈ 509",
+    "text": "If PA is say 600, AB ≈ 509.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "But I need exact.",
+    "index": 71,
+    "function_tag": "uncertainty_management",
+    "id": "71",
+    "premise_id": [],
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "70",
+      "63"
+    ],
+    "abstract": "Need exact AB",
+    "text": "But I need exact.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Perhaps I can look for a different player.",
+    "index": 72,
+    "function_tag": "plan_generation",
+    "id": "72",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Considering Other Candidates",
+    "abstract": "Consider other candidates",
+    "text": "Perhaps I can look for a different player.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Another Yankee: Roy White?",
+    "index": 73,
+    "function_tag": "fact_retrieval",
+    "id": "73",
+    "premise_id": [
+      "34"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Roy White candidate",
+    "text": "Another Yankee: Roy White?",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.006797998817818878
+  },
+  {
+    "sentence": "He was older in 1977, but he might have drawn walks.",
+    "index": 74,
+    "function_tag": "fact_retrieval",
+    "id": "74",
+    "premise_id": [
+      "73"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Roy White might walk",
+    "text": "He was older in 1977, but he might have drawn walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I think Roy White had a good eye.",
+    "index": 75,
+    "function_tag": "fact_retrieval",
+    "id": "75",
+    "premise_id": [
+      "73"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Roy White good eye",
+    "text": "I think Roy White had a good eye.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "But let's assume I can find the data.",
+    "index": 76,
+    "function_tag": "plan_generation",
+    "id": "76",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Assuming Data Availability",
+    "abstract": "Assume data obtainable",
+    "text": "But let's assume I can find the data.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Perhaps the answer is common knowledge for baseball fans.",
+    "index": 77,
+    "function_tag": "fact_retrieval",
+    "id": "77",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Maybe common knowledge",
+    "text": "Perhaps the answer is common knowledge for baseball fans.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I recall that Mickey Rivers didn't walk much; he was a speed guy.",
+    "index": 78,
+    "function_tag": "fact_retrieval",
+    "id": "78",
+    "premise_id": [
+      "32"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Rivers few walks",
+    "text": "I recall that Mickey Rivers didn't walk much; he was a speed guy.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002864871028341761
+  },
+  {
+    "sentence": "Bucky Dent: low walk rate.",
+    "index": 79,
+    "function_tag": "fact_retrieval",
+    "id": "79",
+    "premise_id": [
+      "35"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Dent low walk rate",
+    "text": "Bucky Dent: low walk rate.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002864871028341761
+  },
+  {
+    "sentence": "Lou Piniella: moderate.",
+    "index": 80,
+    "function_tag": "fact_retrieval",
+    "id": "80",
+    "premise_id": [
+      "33"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Piniella moderate walks",
+    "text": "Lou Piniella: moderate.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002864871028341761
+  },
+  {
+    "sentence": "So probably Reggie Jackson or Willie Randolph.",
+    "index": 81,
+    "function_tag": "result_consolidation",
+    "id": "81",
+    "premise_id": [
+      "28",
+      "31",
+      "78",
+      "79",
+      "80"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Narrow to Reggie or Randolph",
+    "text": "So probably Reggie Jackson or Willie Randolph.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I think Willie Randolph had 77 walks in 1977.",
+    "index": 82,
+    "function_tag": "fact_retrieval",
+    "id": "82",
+    "premise_id": [
+      "31"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Randolph 77 BB guess",
+    "text": "I think Willie Randolph had 77 walks in 1977.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004612927823664924
+  },
+  {
+    "sentence": "Is that possible?",
+    "index": 83,
+    "function_tag": "uncertainty_management",
+    "id": "83",
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "82"
+    ],
+    "abstract": "Check Randolph guess",
+    "text": "Is that possible?",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Let's think about the season.",
+    "index": 84,
+    "function_tag": "plan_generation",
+    "id": "84",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Contextualizing Season",
+    "abstract": "Use season context",
+    "text": "Let's think about the season.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I remember that the Yankees had a player with over 100 walks?",
+    "index": 85,
+    "function_tag": "fact_retrieval",
+    "id": "85",
+    "premise_id": [],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Maybe Yankee >100 BB",
+    "text": "I remember that the Yankees had a player with over 100 walks?",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004612927823664924
+  },
+  {
+    "sentence": "No, I don't think so.",
+    "index": 86,
+    "function_tag": "fact_retrieval",
+    "id": "86",
+    "premise_id": [
+      "85"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Reject >100 BB",
+    "text": "No, I don't think so.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Reggie Jackson had 93 walks in 1976 with the Orioles, and in 1977 with the Yankees, he had 91 walks, I think.",
+    "index": 87,
+    "function_tag": "fact_retrieval",
+    "id": "87",
+    "premise_id": [
+      "28",
+      "61"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Reggie 93 (1976); 91 (1977)",
+    "text": "Reggie Jackson had 93 walks in 1976 with the Orioles, and in 1977 with the Yankees, he had 91 walks, I think.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004612927823664924
+  },
+  {
+    "sentence": "Yes, I believe that's it.",
+    "index": 88,
+    "function_tag": "result_consolidation",
+    "id": "88",
+    "premise_id": [
+      "87"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Affirm 91 BB",
+    "text": "Yes, I believe that's it.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "And at-bats: in 1977, Reggie Jackson had 525 at-bats.",
+    "index": 89,
+    "function_tag": "fact_retrieval",
+    "id": "89",
+    "premise_id": [
+      "28",
+      "63"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Claim AB is 525",
+    "text": "And at-bats: in 1977, Reggie Jackson had 525 at-bats.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 4,
+    "is_non_statement": false,
+    "pagerank": 0.023981679147854647
+  },
+  {
+    "sentence": "I think that's standard.",
+    "index": 90,
+    "function_tag": "self_checking",
+    "id": "90",
+    "premise_id": [
+      "89"
+    ],
+    "function_tags": [
+      "self_checking"
+    ],
+    "related_sentences": [
+      "89"
+    ],
+    "abstract": "Check AB claim",
+    "text": "I think that's standard.",
+    "all_function_tags": [
+      "self_checking"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "But let me confirm with another source in my mind.",
+    "index": 91,
+    "function_tag": "plan_generation",
+    "id": "91",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Consulting Memory Source",
+    "abstract": "Consult memory source",
+    "text": "But let me confirm with another source in my mind.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I can think about his batting average and hits.",
+    "index": 92,
+    "function_tag": "plan_generation",
+    "id": "92",
+    "premise_id": [],
+    "function_tags": [
+      "plan_generation"
+    ],
+    "depth": 2,
+    "title": "Calculate Using Stats",
+    "abstract": "Use hits and average",
+    "text": "I can think about his batting average and hits.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "He had a .286 average with 150 hits, so AB = hits / average = 150 / 0.286.",
+    "index": 93,
+    "function_tag": "active_computation",
+    "id": "93",
+    "premise_id": [
+      "37"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Compute AB from hits/avg",
+    "text": "He had a .286 average with 150 hits, so AB = hits / average = 150 / 0.286.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.01311067054691306
+  },
+  {
+    "sentence": "Calculate: 150 divided by 0.286.",
+    "index": 94,
+    "function_tag": "active_computation",
+    "id": "94",
+    "premise_id": [
+      "93"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Do division",
+    "text": "Calculate: 150 divided by 0.286.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0035203923265879474
+  },
+  {
+    "sentence": "0.286 * 525 = let's see, 0.286 * 500 = 143, 0.286*25=7.15, so 143+7.15=150.15, yes, about 525 AB.",
+    "index": 95,
+    "function_tag": "active_computation",
+    "id": "95",
+    "premise_id": [
+      "94",
+      "89"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Back-of-envelope check",
+    "text": "0.286 * 525 = let's see, 0.286 * 500 = 143, 0.286*25=7.15, so 143+7.15=150.15, yes, about 525 AB.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Hits are 150, average .286, so AB = hits / avg = 150 / 0.286.",
+    "index": 96,
+    "function_tag": "active_computation",
+    "id": "96",
+    "premise_id": [
+      "93"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Restate AB equation",
+    "text": "Hits are 150, average .286, so AB = hits / avg = 150 / 0.286.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.00834939950828564
+  },
+  {
+    "sentence": "0.286 = 286/1000 = 143/500, better to calculate numerically.",
+    "index": 97,
+    "function_tag": "active_computation",
+    "id": "97",
+    "premise_id": [
+      "96"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Decimal transformation",
+    "text": "0.286 = 286/1000 = 143/500, better to calculate numerically.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.006579491739160186
+  },
+  {
+    "sentence": "0.286 * AB = 150, so AB = 150 / 0.286 ≈ 524.475, so 525 AB, since it must be integer.",
+    "index": 98,
+    "function_tag": "active_computation",
+    "id": "98",
+    "premise_id": [
+      "97"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Compute AB ≈ 525",
+    "text": "0.286 * AB = 150, so AB = 150 / 0.286 ≈ 524.475, so 525 AB, since it must be integer.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004612927823664924
+  },
+  {
+    "sentence": "Yes, 525 AB.",
+    "index": 99,
+    "function_tag": "result_consolidation",
+    "id": "99",
+    "premise_id": [
+      "98"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Confirm 525 AB",
+    "text": "Yes, 525 AB.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Now, walks: 91.",
+    "index": 100,
+    "function_tag": "fact_retrieval",
+    "id": "100",
+    "premise_id": [
+      "61"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Walks are 91",
+    "text": "Now, walks: 91.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0061424775195726925
+  },
+  {
+    "sentence": "But is he the one with the most walks on the team?",
+    "index": 101,
+    "function_tag": "uncertainty_management",
+    "id": "101",
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "100"
+    ],
+    "abstract": "Confirm team walk leader",
+    "text": "But is he the one with the most walks on the team?",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Willie Randolph: in 1977, he had .274 average, 139 hits, so AB = 139 / 0.274.",
+    "index": 102,
+    "function_tag": "active_computation",
+    "id": "102",
+    "premise_id": [
+      "31",
+      "38"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Randolph AB from avg",
+    "text": "Willie Randolph: in 1977, he had .274 average, 139 hits, so AB = 139 / 0.274.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004612927823664924
+  },
+  {
+    "sentence": "0.274 * AB = 139, AB = 139 / 0.274 ≈ 507.299, so about 507 AB.",
+    "index": 103,
+    "function_tag": "active_computation",
+    "id": "103",
+    "premise_id": [
+      "102"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Compute AB ≈ 507",
+    "text": "0.274 * AB = 139, AB = 139 / 0.274 ≈ 507.299, so about 507 AB.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Walks: I think he had 71 walks or something.",
+    "index": 104,
+    "function_tag": "fact_retrieval",
+    "id": "104",
+    "premise_id": [
+      "31"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Randolph ~71 BB",
+    "text": "Walks: I think he had 71 walks or something.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.003957406525418738
+  },
+  {
+    "sentence": "I think less than Reggie.",
+    "index": 105,
+    "function_tag": "result_consolidation",
+    "id": "105",
+    "premise_id": [
+      "104",
+      "100"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Less than Reggie",
+    "text": "I think less than Reggie.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Thurman Munson: .308 average, 183 hits, AB = 183 / 0.308 ≈ 594 AB.",
+    "index": 106,
+    "function_tag": "active_computation",
+    "id": "106",
+    "premise_id": [
+      "27",
+      "52"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Munson AB ≈ 594",
+    "text": "Thurman Munson: .308 average, 183 hits, AB = 183 / 0.308 ≈ 594 AB.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Walks: I think around 50 or so.",
+    "index": 107,
+    "function_tag": "fact_retrieval",
+    "id": "107",
+    "premise_id": [
+      "27"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Munson ~50 BB",
+    "text": "Walks: I think around 50 or so.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0028648710283417614
+  },
+  {
+    "sentence": "Graig Nettles: .255 average, 132 hits, AB = 132 / 0.255 ≈ 518 AB.",
+    "index": 108,
+    "function_tag": "active_computation",
+    "id": "108",
+    "premise_id": [
+      "30",
+      "53"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Nettles AB ≈ 518",
+    "text": "Graig Nettles: .255 average, 132 hits, AB = 132 / 0.255 ≈ 518 AB.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Walks: maybe 70.",
+    "index": 109,
+    "function_tag": "fact_retrieval",
+    "id": "109",
+    "premise_id": [
+      "30"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Nettles maybe 70 BB",
+    "text": "Walks: maybe 70.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0028648710283417614
+  },
+  {
+    "sentence": "Chris Chambliss: .287 average, 162 hits, AB = 162 / 0.287 ≈ 565 AB.",
+    "index": 110,
+    "function_tag": "active_computation",
+    "id": "110",
+    "premise_id": [
+      "29",
+      "54"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Chambliss AB ≈ 565",
+    "text": "Chris Chambliss: .287 average, 162 hits, AB = 162 / 0.287 ≈ 565 AB.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Walks: about 60.",
+    "index": 111,
+    "function_tag": "fact_retrieval",
+    "id": "111",
+    "premise_id": [
+      "29"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Chambliss ~60 BB",
+    "text": "Walks: about 60.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0028648710283417614
+  },
+  {
+    "sentence": "So Reggie Jackson with 91 walks seems to be the leader.",
+    "index": 112,
+    "function_tag": "result_consolidation",
+    "id": "112",
+    "premise_id": [
+      "100",
+      "104",
+      "107",
+      "109",
+      "111"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Reggie leader with 91 BB",
+    "text": "So Reggie Jackson with 91 walks seems to be the leader.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "But I think Willie Randolph might have had more.",
+    "index": 113,
+    "function_tag": "uncertainty_management",
+    "id": "113",
+    "premise_id": [],
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "112"
+    ],
+    "abstract": "Doubt Randolph possibility",
+    "text": "But I think Willie Randolph might have had more.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I recall that in 1977, Willie Randolph had 77 walks, Reggie 91, so Reggie had more.",
+    "index": 114,
+    "function_tag": "fact_retrieval",
+    "id": "114",
+    "depth": 2,
+    "title": "Recall Walk Totals",
+    "premise_id": [
+      "31",
+      "28"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Randolph 77; Reggie 91",
+    "text": "I recall that in 1977, Willie Randolph had 77 walks, Reggie 91, so Reggie had more.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.006579491739160186
+  },
+  {
+    "sentence": "Yes.",
+    "index": 115,
+    "function_tag": "result_consolidation",
+    "id": "115",
+    "premise_id": [
+      "114"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Affirm Reggie led",
+    "text": "Yes.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0046129278236649255
+  },
+  {
+    "sentence": "But let me make sure about Willie.",
+    "index": 116,
+    "function_tag": "uncertainty_management",
+    "id": "116",
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "114",
+      "112"
+    ],
+    "abstract": "Verify Randolph number",
+    "text": "But let me make sure about Willie.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I think Willie Randolph walked 75 times in 1977.",
+    "index": 117,
+    "function_tag": "fact_retrieval",
+    "id": "117",
+    "premise_id": [
+      "31"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Randolph 75 BB claim",
+    "text": "I think Willie Randolph walked 75 times in 1977.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004066660075126436
+  },
+  {
+    "sentence": "Reggie 91.",
+    "index": 118,
+    "function_tag": "fact_retrieval",
+    "id": "118",
+    "premise_id": [
+      "28",
+      "17"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Reggie 91 BB",
+    "text": "Reggie 91.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 4,
+    "is_non_statement": false,
+    "pagerank": 0.01970615948408868
+  },
+  {
+    "sentence": "Yes.",
+    "index": 119,
+    "function_tag": "result_consolidation",
+    "id": "119",
+    "premise_id": [
+      "117",
+      "118"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Agree again",
+    "text": "Yes.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Now, what about Roy White?",
+    "index": 120,
+    "function_tag": "fact_retrieval",
+    "id": "120",
+    "premise_id": [
+      "34"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Check Roy White",
+    "text": "Now, what about Roy White?",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.005104568802538741
+  },
+  {
+    "sentence": "He had 333 at-bats, .268 average, 89 hits, so not many walks.",
+    "index": 121,
+    "function_tag": "fact_retrieval",
+    "id": "121",
+    "premise_id": [
+      "120"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Roy White stats; few BB",
+    "text": "He had 333 at-bats, .268 average, 89 hits, so not many walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0029741245780494593
+  },
+  {
+    "sentence": "Lou Piniella: 384 AB, .330 average, 127 hits, not many walks.",
+    "index": 122,
+    "function_tag": "fact_retrieval",
+    "id": "122",
+    "premise_id": [
+      "33"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Piniella stats; few BB",
+    "text": "Lou Piniella: 384 AB, .330 average, 127 hits, not many walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0029741245780494593
+  },
+  {
+    "sentence": "So Reggie Jackson had the most walks with 91.",
+    "index": 123,
+    "function_tag": "result_consolidation",
+    "id": "123",
+    "premise_id": [
+      "118",
+      "117",
+      "121",
+      "122"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Reggie most with 91 BB",
+    "text": "So Reggie Jackson had the most walks with 91.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "At-bats: 525.",
+    "index": 124,
+    "function_tag": "fact_retrieval",
+    "id": "124",
+    "premise_id": [
+      "89"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "At-bats are 525",
+    "text": "At-bats: 525.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 3,
+    "is_non_statement": false,
+    "pagerank": 0.017386584362185833
+  },
+  {
+    "sentence": "The question is to find how many at-bats he had that season.",
+    "index": 125,
+    "function_tag": "problem_setup",
+    "id": "125",
+    "premise_id": [],
+    "function_tags": [
+      "problem_setup"
+    ],
+    "abstract": "Restate objective precisely",
+    "text": "The question is to find how many at-bats he had that season.",
+    "all_function_tags": [
+      "problem_setup"
+    ],
+    "reverse_depth": 2,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "So is it 525?",
+    "index": 126,
+    "function_tag": "uncertainty_management",
+    "id": "126",
+    "premise_id": [],
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "124",
+      "123"
+    ],
+    "abstract": "Confirm AB answer",
+    "text": "So is it 525?",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0046129278236649255
+  },
+  {
+    "sentence": "But let me double-check.",
+    "index": 127,
+    "function_tag": "uncertainty_management",
+    "id": "127",
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "125"
+    ],
+    "abstract": "Double-check AB",
+    "text": "But let me double-check.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Perhaps I can find the exact number.",
+    "index": 128,
+    "function_tag": "plan_generation",
+    "id": "128",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Seeking Exact Number",
+    "abstract": "Seek exact value",
+    "text": "Perhaps I can find the exact number.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Another thought: Mickey Rivers had 433 at-bats, but few walks.",
+    "index": 129,
+    "function_tag": "fact_retrieval",
+    "id": "129",
+    "premise_id": [
+      "32"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Rivers 433 AB; few BB",
+    "text": "Another thought: Mickey Rivers had 433 at-bats, but few walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0058188167602210225
+  },
+  {
+    "sentence": "Bucky Dent: 568 AB, .247 average, 140 hits, walks: I think very few, like 40 or so.",
+    "index": 130,
+    "function_tag": "fact_retrieval",
+    "id": "130",
+    "premise_id": [
+      "35"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Dent 568 AB; ~40 BB",
+    "text": "Bucky Dent: 568 AB, .247 average, 140 hits, walks: I think very few, like 40 or so.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0058188167602210225
+  },
+  {
+    "sentence": "So yes, Reggie Jackson led with 91 walks and 525 at-bats.",
+    "index": 131,
+    "function_tag": "result_consolidation",
+    "id": "131",
+    "premise_id": [
+      "118",
+      "124",
+      "129",
+      "130"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Reggie 91 BB, 525 AB",
+    "text": "So yes, Reggie Jackson led with 91 walks and 525 at-bats.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.015070934313428595
+  },
+  {
+    "sentence": "But the question is \"the Yankee with the most walks\", and I think it's him.",
+    "index": 132,
+    "function_tag": "self_checking",
+    "id": "132",
+    "premise_id": [
+      "131"
+    ],
+    "function_tags": [
+      "self_checking"
+    ],
+    "related_sentences": [
+      "131",
+      "123"
+    ],
+    "abstract": "Ensure leader identification",
+    "text": "But the question is \"the Yankee with the most walks\", and I think it's him.",
+    "all_function_tags": [
+      "self_checking"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.014047862340811417
+  },
+  {
+    "sentence": "But just to be thorough, I think there was Cliff Johnson, who was traded to the Yankees during the season.",
+    "index": 133,
+    "function_tag": "fact_retrieval",
+    "id": "133",
+    "premise_id": [
+      "132"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Consider Cliff Johnson",
+    "text": "But just to be thorough, I think there was Cliff Johnson, who was traded to the Yankees during the season.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.012911114966079771
+  },
+  {
+    "sentence": "Cliff Johnson came from Houston, and with the Yankees, he had some games.",
+    "index": 134,
+    "function_tag": "fact_retrieval",
+    "id": "134",
+    "premise_id": [
+      "133"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Johnson midseason arrival",
+    "text": "Cliff Johnson came from Houston, and with the Yankees, he had some games.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.006795323175196297
+  },
+  {
+    "sentence": "In 1977, with Yankees, he had 120 at-bats, 4 walks or something, not many.",
+    "index": 135,
+    "function_tag": "fact_retrieval",
+    "id": "135",
+    "premise_id": [
+      "134"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Johnson few walks",
+    "text": "In 1977, with Yankees, he had 120 at-bats, 4 walks or something, not many.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004852739769424583
+  },
+  {
+    "sentence": "Fran Healy, backup catcher, not many.",
+    "index": 136,
+    "function_tag": "fact_retrieval",
+    "id": "136",
+    "premise_id": [
+      "133"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Healy few walks",
+    "text": "Fran Healy, backup catcher, not many.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004852739769424583
+  },
+  {
+    "sentence": "So no.",
+    "index": 137,
+    "function_tag": "result_consolidation",
+    "id": "137",
+    "premise_id": [
+      "135",
+      "136"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Eliminate other candidates",
+    "text": "So no.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0053886281688983045
+  },
+  {
+    "sentence": "Therefore, Reggie Jackson had 525 at-bats.",
+    "index": 138,
+    "function_tag": "result_consolidation",
+    "id": "138",
+    "premise_id": [
+      "137",
+      "124"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Therefore 525 AB",
+    "text": "Therefore, Reggie Jackson had 525 at-bats.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.006579491739160188
+  },
+  {
+    "sentence": "But the question is about at-bats, and I have it.",
+    "index": 139,
+    "function_tag": "self_checking",
+    "id": "139",
+    "premise_id": [
+      "138"
+    ],
+    "function_tags": [
+      "self_checking"
+    ],
+    "related_sentences": [
+      "138"
+    ],
+    "abstract": "Confirm AB resolved",
+    "text": "But the question is about at-bats, and I have it.",
+    "all_function_tags": [
+      "self_checking"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0046129278236649255
+  },
+  {
+    "sentence": "But let me confirm the walks.",
+    "index": 140,
+    "function_tag": "self_checking",
+    "id": "140",
+    "premise_id": [
+      "139"
+    ],
+    "function_tags": [
+      "self_checking"
+    ],
+    "related_sentences": [
+      "112",
+      "141"
+    ],
+    "abstract": "Confirm walks leader",
+    "text": "But let me confirm the walks.",
+    "all_function_tags": [
+      "self_checking"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I think I recall that in 1977, Reggie Jackson had 91 walks, which was second in the AL to Ken Singleton's 123, but for Yankees, he led.",
+    "index": 141,
+    "function_tag": "fact_retrieval",
+    "id": "141",
+    "premise_id": [
+      "118",
+      "50"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Reggie 91; Singleton 123",
+    "text": "I think I recall that in 1977, Reggie Jackson had 91 walks, which was second in the AL to Ken Singleton's 123, but for Yankees, he led.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0046129278236649255
+  },
+  {
+    "sentence": "Yes.",
+    "index": 142,
+    "function_tag": "result_consolidation",
+    "id": "142",
+    "premise_id": [
+      "141"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Agree again",
+    "text": "Yes.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Perhaps Willie Randolph had more, but I don't think so.",
+    "index": 143,
+    "function_tag": "uncertainty_management",
+    "id": "143",
+    "premise_id": [],
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "112"
+    ],
+    "abstract": "Reconsider Randolph again",
+    "text": "Perhaps Willie Randolph had more, but I don't think so.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I found a source in my mind: Baseball Reference.",
+    "index": 144,
+    "function_tag": "plan_generation",
+    "id": "144",
+    "premise_id": [],
+    "depth": 1,
+    "function_tags": [
+      "plan_generation"
+    ],
+    "title": "Recalling Baseball-Reference",
+    "abstract": "Recall Baseball-Reference",
+    "text": "I found a source in my mind: Baseball Reference.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "But since I can't access, from memory, Willie Randolph in 1977: 512 at-bats, 71 walks?",
+    "index": 145,
+    "function_tag": "fact_retrieval",
+    "id": "145",
+    "premise_id": [
+      "31"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Randolph 512 AB, 71 BB?",
+    "text": "But since I can't access, from memory, Willie Randolph in 1977: 512 at-bats, 71 walks?",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.00450367428433558
+  },
+  {
+    "sentence": "Not sure.",
+    "index": 146,
+    "function_tag": "uncertainty_management",
+    "id": "146",
+    "premise_id": [],
+    "function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "145"
+    ],
+    "abstract": "Uncertain Randolph stats",
+    "text": "Not sure.",
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I think 71 is less than 91.",
+    "index": 147,
+    "function_tag": "result_consolidation",
+    "id": "147",
+    "premise_id": [
+      "145",
+      "118"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "71 less than 91",
+    "text": "I think 71 is less than 91.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0046129278236649255
+  },
+  {
+    "sentence": "Yes.",
+    "index": 148,
+    "function_tag": "result_consolidation",
+    "id": "148",
+    "premise_id": [
+      "147"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Affirm comparison",
+    "text": "Yes.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Another player: Graig Nettles had 69 walks in 1977, I believe.",
+    "index": 149,
+    "function_tag": "fact_retrieval",
+    "id": "149",
+    "premise_id": [
+      "30"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Nettles 69 BB",
+    "text": "Another player: Graig Nettles had 69 walks in 1977, I believe.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.005211146699245505
+  },
+  {
+    "sentence": "So Reggie had 91.",
+    "index": 150,
+    "function_tag": "result_consolidation",
+    "id": "150",
+    "premise_id": [
+      "149",
+      "118"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Thus Reggie 91 BB",
+    "text": "So Reggie had 91.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.00618508721226122
+  },
+  {
+    "sentence": "Therefore, at-bats were 525.",
+    "index": 151,
+    "function_tag": "result_consolidation",
+    "id": "151",
+    "premise_id": [
+      "150",
+      "124"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Therefore AB is 525",
+    "text": "Therefore, at-bats were 525.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.00834939950828564
+  },
+  {
+    "sentence": "So the answer should be 525.",
+    "index": 152,
+    "function_tag": "result_consolidation",
+    "id": "152",
+    "premise_id": [
+      "151"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Final number: 525",
+    "text": "So the answer should be 525.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.006579491739160188
+  },
+  {
+    "sentence": "But the question is to box the answer.",
+    "index": 153,
+    "function_tag": "problem_setup",
+    "id": "153",
+    "function_tags": [
+      "problem_setup"
+    ],
+    "abstract": "Emit final answer",
+    "text": "But the question is to box the answer.",
+    "all_function_tags": [
+      "problem_setup"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0046129278236649255
+  },
+  {
+    "sentence": "But let me make sure about the number.",
+    "index": 154,
+    "function_tag": "plan_generation",
+    "id": "154",
+    "function_tags": [
+      "plan_generation"
+    ],
+    "related_sentences": [
+      "152",
+      "151"
+    ],
+    "depth":0,
+    "title": "Re-verify At-Bats",
+    "abstract": "Re-verify number",
+    "text": "But let me make sure about the number.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I think Reggie Jackson played 146 games, with 525 at-bats, yes.",
+    "index": 155,
+    "function_tag": "fact_retrieval",
+    "id": "155",
+    "premise_id": [
+      "28",
+      "89"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Games and AB claim",
+    "text": "I think Reggie Jackson played 146 games, with 525 at-bats, yes.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.005840641717997896
+  },
+  {
+    "sentence": "Plate appearances: 612, with 91 walks, 5 HBP, 4 SH, 2 SF or something, so AB = PA - BB - HBP - SH - SF, approximately.",
+    "index": 156,
+    "function_tag": "active_computation",
+    "id": "156",
+    "premise_id": [
+      "155",
+      "23",
+      "118"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "PA minus components",
+    "text": "Plate appearances: 612, with 91 walks, 5 HBP, 4 SH, 2 SF or something, so AB = PA - BB - HBP - SH - SF, approximately.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.01137594531429515
+  },
+  {
+    "sentence": "612 - 91 = 521, then minus others, but he had few, so about 525, yes.",
+    "index": 157,
+    "function_tag": "active_computation",
+    "id": "157",
+    "premise_id": [
+      "156"
+    ],
+    "function_tags": [
+      "active_computation"
+    ],
+    "abstract": "Compute to ~525 AB",
+    "text": "612 - 91 = 521, then minus others, but he had few, so about 525, yes.",
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.009942317595011468
+  },
+  {
+    "sentence": "Officially, 525 AB.",
+    "index": 158,
+    "function_tag": "result_consolidation",
+    "id": "158",
+    "premise_id": [
+      "157"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Officially 525 AB",
+    "text": "Officially, 525 AB.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.00834939950828564
+  },
+  {
+    "sentence": "So I think that's it.",
+    "index": 159,
+    "function_tag": "result_consolidation",
+    "id": "159",
+    "premise_id": [
+      "158"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Conclude again",
+    "text": "So I think that's it.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.006579491739160188
+  },
+  {
+    "sentence": "But the problem says \"the Yankee with the most walks\", and I think it's Reggie Jackson.",
+    "index": 160,
+    "function_tag": "self_checking",
+    "id": "160",
+    "premise_id": [
+      "159"
+    ],
+    "function_tags": [
+      "self_checking"
+    ],
+    "related_sentences": [
+      "112",
+      "150",
+      "170"
+    ],
+    "abstract": "Re-check leader status",
+    "text": "But the problem says \"the Yankee with the most walks\", and I think it's Reggie Jackson.",
+    "all_function_tags": [
+      "self_checking"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0046129278236649255
+  },
+  {
+    "sentence": "But just to be absolutely sure, let's see if any other Yankee had more than 91 walks in 1977.",
+    "index": 161,
+    "function_tag": "plan_generation",
+    "id": "161",
+    "premise_id": [],
+    "function_tags": [
+      "plan_generation"
+    ],
+    "related_sentences": [
+      "112",
+      "150"
+    ],
+    "depth": 0,
+    "title": "Verify No Other Leader",
+    "abstract": "Any Yankee >91 BB?",
+    "text": "But just to be absolutely sure, let's see if any other Yankee had more than 91 walks in 1977.",
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Thurman Munson had 58 walks.",
+    "index": 162,
+    "function_tag": "fact_retrieval",
+    "id": "162",
+    "premise_id": [
+      "27"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Munson 58 BB",
+    "text": "Thurman Munson had 58 walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 4,
+    "is_non_statement": false,
+    "pagerank": 0.003236151142815509
+  },
+  {
+    "sentence": "Chris Chambliss: 54 walks.",
+    "index": 163,
+    "function_tag": "fact_retrieval",
+    "id": "163",
+    "premise_id": [
+      "29"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Chambliss 54 BB",
+    "text": "Chris Chambliss: 54 walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 4,
+    "is_non_statement": false,
+    "pagerank": 0.003236151142815509
+  },
+  {
+    "sentence": "Graig Nettles: 69 walks.",
+    "index": 164,
+    "function_tag": "fact_retrieval",
+    "id": "164",
+    "premise_id": [
+      "30"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Nettles 69 BB",
+    "text": "Graig Nettles: 69 walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 4,
+    "is_non_statement": false,
+    "pagerank": 0.003236151142815509
+  },
+  {
+    "sentence": "Willie Randolph: 75 walks?",
+    "index": 165,
+    "function_tag": "fact_retrieval",
+    "id": "165",
+    "premise_id": [
+      "31"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Randolph 75 BB?",
+    "text": "Willie Randolph: 75 walks?",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0046129278236649255
+  },
+  {
+    "sentence": "I think 75.",
+    "index": 166,
+    "function_tag": "self_checking",
+    "id": "166",
+    "premise_id": [
+      "165"
+    ],
+    "function_tags": [
+      "self_checking"
+    ],
+    "related_sentences": [
+      "165"
+    ],
+    "abstract": "Unsure Randolph 75",
+    "text": "I think 75.",
+    "all_function_tags": [
+      "self_checking"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "I think Willie Randolph had 75 walks.",
+    "index": 167,
+    "function_tag": "fact_retrieval",
+    "id": "167",
+    "premise_id": [
+      "31"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Randolph 75 BB claim",
+    "text": "I think Willie Randolph had 75 walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 4,
+    "is_non_statement": false,
+    "pagerank": 0.004328686639892486
+  },
+  {
+    "sentence": "Yes, 75 < 91.",
+    "index": 168,
+    "function_tag": "result_consolidation",
+    "id": "168",
+    "premise_id": [
+      "167",
+      "118"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "75 < 91 confirmed",
+    "text": "Yes, 75 < 91.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  },
+  {
+    "sentence": "Mickey Rivers: 35 walks.",
+    "index": 169,
+    "function_tag": "fact_retrieval",
+    "id": "169",
+    "premise_id": [
+      "32"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "Rivers 35 BB",
+    "text": "Mickey Rivers: 35 walks.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 4,
+    "is_non_statement": false,
+    "pagerank": 0.003236151142815509
+  },
+  {
+    "sentence": "So yes, Reggie Jackson had 91, the most.",
+    "index": 170,
+    "function_tag": "result_consolidation",
+    "id": "170",
+    "premise_id": [
+      "118",
+      "162",
+      "163",
+      "164",
+      "167",
+      "169"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Reggie has the most",
+    "text": "So yes, Reggie Jackson had 91, the most.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": 3,
+    "is_non_statement": false,
+    "pagerank": 0.005388628168898306
+  },
+  {
+    "sentence": "At-bats: 525.",
+    "index": 171,
+    "function_tag": "fact_retrieval",
+    "id": "171",
+    "premise_id": [
+      "124"
+    ],
+    "function_tags": [
+      "fact_retrieval"
+    ],
+    "abstract": "AB is 525",
+    "text": "At-bats: 525.",
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": 3,
+    "is_non_statement": false,
+    "pagerank": 0.005388628168898306
+  },
+  {
+    "sentence": "Therefore, the answer is 525.",
+    "index": 172,
+    "function_tag": "result_consolidation",
+    "id": "172",
+    "premise_id": [
+      "170",
+      "171"
+    ],
+    "function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Answer is 525",
+    "text": "Therefore, the answer is 525.",
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": 2,
+    "is_non_statement": false,
+    "pagerank": 0.006579491739160188
+  },
+  {
+    "sentence": "But the question is \"how many at bats did the Yankee with the most walks have\", so for Reggie Jackson, it's 525.",
+    "index": 173,
+    "function_tag": "final_answer_emission",
+    "id": "173",
+    "premise_id": [
+      "172"
+    ],
+    "function_tags": [
+      "final_answer_emission"
+    ],
+    "abstract": "State final answer",
+    "text": "But the question is \"how many at bats did the Yankee with the most walks have\", so for Reggie Jackson, it's 525.",
+    "all_function_tags": [
+      "final_answer_emission"
+    ],
+    "reverse_depth": 1,
+    "is_non_statement": false,
+    "pagerank": 0.0046129278236649255
+  },
+  {
+    "sentence": "So I think that's it.",
+    "index": 174,
+    "function_tag": "final_answer_emission",
+    "id": "174",
+    "premise_id": [
+      "173"
+    ],
+    "function_tags": [
+      "final_answer_emission"
+    ],
+    "abstract": "Close reasoning",
+    "text": "So I think that's it.",
+    "all_function_tags": [
+      "final_answer_emission"
+    ],
+    "reverse_depth": 0,
+    "is_non_statement": false,
+    "pagerank": 0.002427856829510971
+  }
+]

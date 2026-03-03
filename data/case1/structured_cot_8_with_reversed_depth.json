@@ -1,0 +1,1562 @@
+[
+  {
+    "sentence": "So i've got this subtraction problem here: \n\n ??6 k 0 l  \n-??m 9 n 4  \n=?2011\n\nand i need to find the digits k, l, m, and n, and then add them up to find k + l + m + n.",
+    "index": 0,
+    "id": "0",
+    "premise_id": [],
+    "all_function_tags": [
+      "problem_setup",
+      "plan_generation"
+    ],
+    "abstract": "Read and parse the problem.",
+    "title": "Problem Understanding",
+    "depth": 1,
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "problem_setup"
+  },
+  {
+    "sentence": "first, i should understand what this subtraction is telling me.",
+    "index": 1,
+    "id": "1",
+    "premise_id": [],
+    "all_function_tags": [
+      "problem_setup"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "problem_setup"
+  },
+  {
+    "sentence": "it looks like a four-digit number minus another four-digit number equals 2011.",
+    "index": 2,
+    "id": "2",
+    "premise_id": [],
+    "all_function_tags": [
+      "problem_setup"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "problem_setup"
+  },
+  {
+    "sentence": "the numbers are written in the usual way, with thousands, hundreds, tens, and units places.",
+    "index": 3,
+    "id": "3",
+    "premise_id": [],
+    "all_function_tags": [
+      "problem_setup"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "problem_setup"
+  },
+  {
+    "sentence": "so, the minuend is 6k0l, which means 6000 + k*100 + 0*10 + l*1.",
+    "index": 4,
+    "id": "4",
+    "premise_id": [],
+    "all_function_tags": [
+      "fact_retrieval",
+      "plan_generation"
+    ],
+    "abstract": "Expressing numbers with unknown digits and known result.",
+    "title": "Formulating Equation",
+    "depth": 1,
+    "parent_plan": "0",
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0052325476408051855,
+    "function_tag": "fact_retrieval"
+  },
+  {
+    "sentence": "the subtrahend is m9n4, which is m*1000 + 9*100 + n*10 + 4*1.",
+    "index": 5,
+    "id": "5",
+    "premise_id": [],
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0052325476408051855,
+    "function_tag": "fact_retrieval"
+  },
+  {
+    "sentence": "the difference is 2011.",
+    "index": 6,
+    "id": "6",
+    "premise_id": [],
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.0052325476408051855,
+    "function_tag": "fact_retrieval"
+  },
+  {
+    "sentence": "let me write that in equation form:\n\n6000 + 100k + 0*10 + l - (1000m + 900 + 10n + 4) = 2011\n\nsimplify that:\n\n6000 + 100k + l - 1000m - 900 - 10n - 4 = 2011\n\ncombine like terms:\n\n(6000 - 900 - 4) + 100k + l - 1000m - 10n = 2011  \n5096 + 100k + l - 1000m - 10n = 2011\n\nnow, rearrange to group like terms:\n\n100k + l - 10n - 1000m = 2011 - 5096  \n100k + l - 10n - 1000m = -3085\n\nhmm, that seems a bit messy.",
+    "index": 7,
+    "id": "7",
+    "premise_id": [
+      "4",
+      "5",
+      "6"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "maybe there's a better way to approach this.",
+    "index": 8,
+    "id": "8",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "7"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "let me think about the subtraction digit by digit, starting from the rightmost digit.",
+    "index": 9,
+    "id": "9",
+    "premise_id": [],
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "abstract": "Solving digit by digit from the rightmost digit.",
+    "title": "Digit-by-Digit Subtraction",
+    "depth": 1,
+    "parent_plan": "0",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "plan_generation"
+  },
+  {
+    "sentence": "starting with the units place: \n\nl - 4 = 1\n\nbut, since l is a digit from 0 to 9, l - 4 should give me 1, but if l is less than 4, i would need to borrow from the tens place.",
+    "index": 10,
+    "id": "10",
+    "premise_id": [],
+    "all_function_tags": [
+      "active_computation",
+      "plan_generation"
+    ],
+    "abstract": "Solving for l in the units place finding that l = 5.",
+    "title": "Resolving Units Place",
+    "depth": 2,
+    "parent_plan": "9",
+    "reverse_depth": 5,
+    "is_non_statement": false,
+    "pagerank": 0.04524972714217733,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": " so, first, is l - 4 = 1?",
+    "index": 11,
+    "id": "11",
+    "premise_id": [
+      "10"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": 4,
+    "is_non_statement": false,
+    "pagerank": 0.03001030718751656,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "then l = 5.",
+    "index": 12,
+    "id": "12",
+    "premise_id": [
+      "11"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": 4,
+    "is_non_statement": false,
+    "pagerank": 0.015794896971582005,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "alternatively, if i borrow, then l + 10 - 4 = 1, so l = -9, which doesn't make sense because l is a digit.",
+    "index": 13,
+    "id": "13",
+    "premise_id": [
+      "10"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": 4,
+    "is_non_statement": false,
+    "pagerank": 0.015794896971582005,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, l must be 5.",
+    "index": 14,
+    "id": "14",
+    "premise_id": [
+      "11",
+      "12",
+      "13"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": 3,
+    "is_non_statement": false,
+    "pagerank": 0.039232856396467175,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "okay, so l = 5.",
+    "index": 15,
+    "id": "15",
+    "premise_id": [
+      "14"
+    ],
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": 2,
+    "is_non_statement": false,
+    "pagerank": 0.039119792295629216,
+    "function_tag": "result_consolidation"
+  },
+  {
+    "sentence": "now, move to the tens place: \n\n0 - n = 1\n\nagain, 0 - n should be 1, but 0 - n can't be positive unless i borrow from the hundreds place.",
+    "index": 16,
+    "id": "16",
+    "premise_id": [
+      "15"
+    ],
+    "all_function_tags": [
+      "active_computation",
+      "plan_generation"
+    ],
+    "abstract": "Working on n in the tens place with borrowing.",
+    "title": "Resolving Tens Place",
+    "depth": 2,
+    "parent_plan": "9",
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.02216147413755172,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, i need to borrow from the hundreds place.",
+    "index": 17,
+    "id": "17",
+    "premise_id": [
+      "16"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.015537564836286042,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "that means the 0 becomes 10, and the hundreds digit decreases by 1.",
+    "index": 18,
+    "id": "18",
+    "premise_id": [
+      "17"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.008177665914952028,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, 10 - n = 1, which implies n = 9.",
+    "index": 19,
+    "id": "19",
+    "premise_id": [
+      "16",
+      "17",
+      "18"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.013842098680231426,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "wait a minute, if n = 9, then in the hundreds place, we have k - 1 (because we borrowed 1) - 9 = 0.",
+    "index": 20,
+    "id": "20",
+    "premise_id": [
+      "19"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.010907848203163286,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "wait, let me think again.",
+    "index": 21,
+    "id": "21",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "20"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "in the hundreds place:\n\n after borrowing, the hundreds digit is k - 1, and we have (k - 1) - 9 = 0. ",
+    "index": 22,
+    "id": "22",
+    "premise_id": [
+      "20"
+    ],
+    "all_function_tags": [
+      "active_computation",
+      "plan_generation"
+    ],
+    "abstract": "Working on k in the hundreds place with borrowing.",
+    "title": "Resolving Hundreds Place",
+    "depth": 2,
+    "parent_plan": "9",
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.007647569404088811,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, k - 1 - 9 = 0 \u2192 k - 10 = 0 \u2192 k = 10.",
+    "index": 23,
+    "id": "23",
+    "premise_id": [
+      "22"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "but k is a digit, so it can't be 10.",
+    "index": 24,
+    "id": "24",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "23"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "that doesn't make sense.",
+    "index": 25,
+    "id": "25",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "24"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "maybe i made a mistake in the borrowing.",
+    "index": 26,
+    "id": "26",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "20",
+      "22",
+      "23"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "let me go back to the tens place.",
+    "index": 27,
+    "id": "27",
+    "premise_id": [],
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "abstract": "Returning to tens place to correct n.",
+    "title": "Correcting Tens Place",
+    "depth": 2,
+    "parent_plan": "9",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "plan_generation"
+  },
+  {
+    "sentence": "we have 0 - n = 1, but since 0 < n, we have to borrow from the hundreds place.",
+    "index": 28,
+    "id": "28",
+    "premise_id": [],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": 4,
+    "is_non_statement": false,
+    "pagerank": 0.032038262710256143,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, we add 10 to the 0, making it 10, and subtract 1 from the hundreds digit.",
+    "index": 29,
+    "id": "29",
+    "premise_id": [
+      "28"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": 4,
+    "is_non_statement": false,
+    "pagerank": 0.020484775793058792,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, 10 - n = 1 ?",
+    "index": 30,
+    "id": "30",
+    "premise_id": [
+      "28",
+      "29"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": 3,
+    "is_non_statement": false,
+    "pagerank": 0.021282057429105217,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "n = 9.",
+    "index": 31,
+    "id": "31",
+    "premise_id": [
+      "30"
+    ],
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": 2,
+    "is_non_statement": false,
+    "pagerank": 0.01917446441788859,
+    "function_tag": "result_consolidation"
+  },
+  {
+    "sentence": "now, in the hundreds place, originally k, but we borrowed 1, so it's k - 1.",
+    "index": 32,
+    "id": "32",
+    "premise_id": [
+      "29"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.007647569404088813,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "now, (k - 1) - 9 = 1, because the difference in the hundreds place is 0 in 2011, but wait, 2011 has 0 in the hundreds place.",
+    "index": 33,
+    "id": "33",
+    "premise_id": [
+      "32"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "wait, i need to look at the entire subtraction again.",
+    "index": 34,
+    "id": "34",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "33"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "let me write it out:\n\n??6 k 0 l  \n-??m 9 n 4  \n=?2 0 1 1",
+    "index": 35,
+    "id": "35",
+    "premise_id": [],
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "abstract": "Revisiting subtraction and resolving l, n.",
+    "title": "Revisiting Subtraction",
+    "depth": 2,
+    "parent_plan": "9",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "plan_generation"
+  },
+  {
+    "sentence": "starting from the units place: \n\nl - 4 = 1 ? l = 5 (since no borrowing needed would give l = 5)\n\nthen, tens place:\n\n0 - n = 1, but since 0 < n, we borrow 1 from the hundreds place.",
+    "index": 36,
+    "id": "36",
+    "premise_id": [],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.013842098680231426,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, 10 - n = 1 ?",
+    "index": 37,
+    "id": "37",
+    "premise_id": [
+      "36"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.010907848203163286,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "n = 9.",
+    "index": 38,
+    "id": "38",
+    "premise_id": [
+      "37"
+    ],
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.007647569404088811,
+    "function_tag": "result_consolidation"
+  },
+  {
+    "sentence": "now, in the hundreds place:\n\nk - 1 (because we borrowed 1) - 9 = 1.",
+    "index": 39,
+    "id": "39",
+    "premise_id": [
+      "38"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "wait, why 1?",
+    "index": 40,
+    "id": "40",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "39"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "because the difference in the hundreds place is 0 in 2011.",
+    "index": 41,
+    "id": "41",
+    "premise_id": [],
+    "all_function_tags": [
+      "fact_retrieval"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "fact_retrieval"
+  },
+  {
+    "sentence": "wait, maybe i'm getting confused.",
+    "index": 42,
+    "id": "42",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "39",
+      "41"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "let me look at the subtraction again:",
+    "index": 43,
+    "id": "43",
+    "premise_id": [],
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "abstract": "Repeating subtraction to recheck l and n.",
+    "title": "Rechecking Units and Tens",
+    "depth": 2,
+    "parent_plan": "9",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "plan_generation"
+  },
+  {
+    "sentence": "\n\n6 k 0 l\n\n m 9 n 4  \n= 2 0 1 1\n\nso, starting from the right:\n\nunits: l - 4 = 1 ?",
+    "index": 44,
+    "id": "44",
+    "premise_id": [],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.016482924226529326,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "l = 5\n\ntens: 0 - n = 1 ?",
+    "index": 45,
+    "id": "45",
+    "premise_id": [
+      "44"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.013842098680231426,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "need to borrow, so 10 - n = 1 ?",
+    "index": 46,
+    "id": "46",
+    "premise_id": [
+      "45"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.010907848203163284,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "n = 9\n\nhundreds: (k - 1) - 9 = 0 ?",
+    "index": 47,
+    "id": "47",
+    "premise_id": [
+      "46"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.007647569404088814,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "k - 10 = 0 ?",
+    "index": 48,
+    "id": "48",
+    "premise_id": [
+      "47"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "k = 10, which is impossible.",
+    "index": 49,
+    "id": "49",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "48"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "wait, that can't be right because k has to be a single digit.",
+    "index": 50,
+    "id": "50",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "48",
+      "49"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "maybe i need to borrow from the thousands place.",
+    "index": 51,
+    "id": "51",
+    "premise_id": [],
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "abstract": "Solving for m and k with borrowing from thousands place.",
+    "title": "Resolving Thousands and Hundreds",
+    "depth": 2,
+    "parent_plan": "9",
+    "related_sentences": [
+      "47",
+      "49",
+      "50"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "plan_generation"
+  },
+  {
+    "sentence": "let me try that.",
+    "index": 52,
+    "id": "52",
+    "premise_id": [],
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "plan_generation"
+  },
+  {
+    "sentence": "so, in the hundreds place, if k - 1 - 9 is not enough, maybe i need to borrow from the thousands place.",
+    "index": 53,
+    "id": "53",
+    "premise_id": [],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": 5,
+    "is_non_statement": false,
+    "pagerank": 0.03229356034879048,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, the thousands digit is 6, and m is being subtracted.",
+    "index": 54,
+    "id": "54",
+    "premise_id": [
+      "53"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": 4,
+    "is_non_statement": false,
+    "pagerank": 0.0314094652042471,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "let me consider the thousands place:\n\n6 - m = 2 ?",
+    "index": 55,
+    "id": "55",
+    "premise_id": [
+      "54"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": 3,
+    "is_non_statement": false,
+    "pagerank": 0.030427138877934017,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "m = 4\n\nokay, so m = 4.",
+    "index": 56,
+    "id": "56",
+    "premise_id": [
+      "55"
+    ],
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": 2,
+    "is_non_statement": false,
+    "pagerank": 0.02933566742288529,
+    "function_tag": "result_consolidation"
+  },
+  {
+    "sentence": "now, back to the hundreds place.",
+    "index": 57,
+    "id": "57",
+    "premise_id": [],
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.00746644248116333,
+    "function_tag": "plan_generation"
+  },
+  {
+    "sentence": "since m = 4, and 6 - 4 = 2 in the thousands place, and we have k in the hundreds place.",
+    "index": 58,
+    "id": "58",
+    "premise_id": [
+      "56"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.007647569404088811,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "but earlier, i had k - 1 - 9 = 0 ?",
+    "index": 59,
+    "id": "59",
+    "premise_id": [
+      "58"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "k = 10, which is impossible.",
+    "index": 60,
+    "id": "60",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "59"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "so, perhaps i need to adjust for borrowing.",
+    "index": 61,
+    "id": "61",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "59",
+      "60"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "wait, maybe i need to consider that in the hundreds place, after borrowing, it's (k + 10 - 1) - 9 = 1.",
+    "index": 62,
+    "id": "62",
+    "premise_id": [],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "wait, that seems complicated.",
+    "index": 63,
+    "id": "63",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "62"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "let me try to approach this differently.",
+    "index": 64,
+    "id": "64",
+    "premise_id": [],
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "abstract": "Plugging in known values for step-by-step subtraction.",
+    "title": "Step-by-Step Subtraction",
+    "depth": 2,
+    "parent_plan": "9",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "plan_generation"
+  },
+  {
+    "sentence": "we have 6k05 - 49n4 = 2011\n\nwait, since l = 5 and n = 9, and m = 4.",
+    "index": 65,
+    "id": "65",
+    "premise_id": [
+      "15",
+      "31",
+      "56"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.02099873970973689,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, 6k05 - 4994 = 2011\n\nlet's check if that's correct.",
+    "index": 66,
+    "id": "66",
+    "premise_id": [
+      "65"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "related_sentences": [
+      "65"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.018859668233314544,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "6k05 - 4994 = 2011\n\nso, 6k05 - 4994 = 2011\n\nlet me compute 6k05 - 4994.",
+    "index": 67,
+    "id": "67",
+    "premise_id": [
+      "66"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.016482924226529323,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "first, subtract 4994 from 6k05.",
+    "index": 68,
+    "id": "68",
+    "premise_id": [
+      "67"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.013842098680231424,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "let me do it step by step.",
+    "index": 69,
+    "id": "69",
+    "premise_id": [],
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.010907848203163286,
+    "function_tag": "plan_generation"
+  },
+  {
+    "sentence": "start from the units place:\n\n5 - 4 = 1 (matches the units digit of 2011)\n\ntens place:\n\n0 - 9, can't do that, so borrow 1 from the hundreds place.",
+    "index": 70,
+    "id": "70",
+    "premise_id": [],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.007647569404088813,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, 10 - 9 = 1 (matches the tens digit of 2011)\n\nhundreds place:\n\n(k - 1) - 9, but earlier this gave k - 10 = 0 ?",
+    "index": 71,
+    "id": "71",
+    "premise_id": [
+      "70"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "k = 10, which is not possible.",
+    "index": 72,
+    "id": "72",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "71"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "wait, maybe i need to borrow from the thousands place.",
+    "index": 73,
+    "id": "73",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "71",
+      "72"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "so, in the hundreds place, since k is being reduced by 1 due to borrowing, and then we subtract 9, but if k is less than 10, this doesn't work.",
+    "index": 74,
+    "id": "74",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "73"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "wait, perhaps i need to adjust the thousands place.",
+    "index": 75,
+    "id": "75",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "74"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "let me look at the thousands place.",
+    "index": 76,
+    "id": "76",
+    "premise_id": [],
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "plan_generation"
+  },
+  {
+    "sentence": "6 - 4 = 2 (matches the thousands digit of 2011)\n\nnow, in the hundreds place, if i've already borrowed from the thousands place, then the hundreds digit is k - 1 - 9 = 0.",
+    "index": 77,
+    "id": "77",
+    "premise_id": [],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.007647569404088812,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, k - 10 = 0 ?",
+    "index": 78,
+    "id": "78",
+    "premise_id": [
+      "77"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "k = 10, which again is impossible.",
+    "index": 79,
+    "id": "79",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "78"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "hmm, there must be something wrong with my approach.",
+    "index": 80,
+    "id": "80",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "78",
+      "79"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "let me try plugging in the known values.",
+    "index": 81,
+    "id": "81",
+    "premise_id": [],
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "abstract": "Retrying subtraction with known values to find k.",
+    "title": "Finding Final Digit",
+    "depth": 2,
+    "parent_plan": "9",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "plan_generation"
+  },
+  {
+    "sentence": "we have m = 4, n = 9, l = 5.",
+    "index": 82,
+    "id": "82",
+    "premise_id": [
+      "15",
+      "31",
+      "56"
+    ],
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.018859668233314544,
+    "function_tag": "result_consolidation"
+  },
+  {
+    "sentence": "so, the subtraction is:\n\n6 k 0 5",
+    "index": 83,
+    "id": "83",
+    "premise_id": [
+      "82"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.01648292422652932,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "4 9 9 4  \n= 2 0 1 1\n\nnow, let's perform the subtraction step by step.",
+    "index": 84,
+    "id": "84",
+    "premise_id": [
+      "83"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.013842098680231424,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "starting from the units place:\n\n5 - 4 = 1 (correct)\n\ntens place:\n\n0 - 9, can't do that, so borrow 1 from the hundreds place.",
+    "index": 85,
+    "id": "85",
+    "premise_id": [
+      "84"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.010907848203163286,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, 10 - 9 = 1 (correct)\n\nhundreds place:\n\n(k - 1) - 9 = 0 ?",
+    "index": 86,
+    "id": "86",
+    "premise_id": [
+      "85"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.007647569404088813,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "k - 10 = 0 ?",
+    "index": 87,
+    "id": "87",
+    "premise_id": [
+      "86"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": null,
+    "is_non_statement": false,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "k = 10, which is not possible.",
+    "index": 88,
+    "id": "88",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "87"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "this suggests that there's a mistake in assuming k - 1 - 9 = 0.",
+    "index": 89,
+    "id": "89",
+    "premise_id": [],
+    "all_function_tags": [
+      "uncertainty_management"
+    ],
+    "related_sentences": [
+      "88"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "uncertainty_management"
+  },
+  {
+    "sentence": "maybe i need to borrow from the thousands place in the hundreds place subtraction.",
+    "index": 90,
+    "id": "90",
+    "premise_id": [],
+    "all_function_tags": [
+      "plan_generation"
+    ],
+    "related_sentences": [
+      "86",
+      "87",
+      "88"
+    ],
+    "uncertainty_abstract": "",
+    "reverse_depth": null,
+    "is_non_statement": true,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "plan_generation"
+  },
+  {
+    "sentence": "so, if i borrow 1 from the thousands place, the hundreds digit becomes k + 10 - 1 = k + 9, and then subtract 9.",
+    "index": 91,
+    "id": "91",
+    "premise_id": [],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "reverse_depth": 3,
+    "is_non_statement": false,
+    "pagerank": 0.01052028242018061,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, (k + 9) - 9 = k = 0 (from the difference in the hundreds place of 2011)\n\nso, k = 0\n\nbut wait, if k = 0, then in the thousands place, 6 - 4 = 2 (correct)\n\nnow, check the hundreds place:\n\nsince we borrowed 1 from the thousands place, k (which is 0) becomes 0 + 10 - 1 = 9, and then 9 - 9 = 0 (matches the hundreds digit of 2011)\n\nokay, that makes sense.",
+    "index": 92,
+    "id": "92",
+    "premise_id": [
+      "91"
+    ],
+    "all_function_tags": [
+      "active_computation"
+    ],
+    "related_sentences": [
+      "91"
+    ],
+    "reverse_depth": 2,
+    "is_non_statement": false,
+    "pagerank": 0.007216940282601933,
+    "function_tag": "active_computation"
+  },
+  {
+    "sentence": "so, k = 0\n\nthen, m = 4, n = 9, l = 5\n\ntherefore, k + l + m + n = 0 + 5 + 4 + 9 = 18\n\nso, the answer should be 18.",
+    "index": 93,
+    "id": "93",
+    "premise_id": [
+      "92",
+      "15",
+      "31",
+      "56"
+    ],
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "abstract": "Finalizing k, l, m, n finding the sum of these values to be 18.",
+    "title": "Summing the Digits",
+    "depth": 1,
+    "parent_plan": "0",
+    "reverse_depth": 1,
+    "is_non_statement": false,
+    "pagerank": 0.014186239764160074,
+    "function_tag": "result_consolidation"
+  },
+  {
+    "sentence": "let me double-check by plugging these values back into the original subtraction:",
+    "index": 94,
+    "id": "94",
+    "premise_id": [
+      "93"
+    ],
+    "all_function_tags": [
+      "self_checking",
+      "plan_generation"
+    ],
+    "abstract": "Verifying k + l + m + n = 18 by plugging values back.",
+    "title": "Verifying the Solution",
+    "depth": 1,
+    "parent_plan": "0",
+    "related_sentences": [
+      "93"
+    ],
+    "reverse_depth": 2,
+    "is_non_statement": false,
+    "pagerank": 0.009277708803626048,
+    "function_tag": "self_checking"
+  },
+  {
+    "sentence": "\n\n6 0 0 5\n\n 4 9 9 4  \n= 2 0 1 1\n\nyes, that works.",
+    "index": 95,
+    "id": "95",
+    "premise_id": [
+      "94"
+    ],
+    "all_function_tags": [
+      "self_checking"
+    ],
+    "related_sentences": [
+      "93"
+    ],
+    "reverse_depth": 1,
+    "is_non_statement": false,
+    "pagerank": 0.005836303081626093,
+    "function_tag": "self_checking"
+  },
+  {
+    "sentence": "therefore, the sum of k + l + m + n is 18.",
+    "index": 96,
+    "id": "96",
+    "premise_id": [
+      "93",
+      "95"
+    ],
+    "all_function_tags": [
+      "result_consolidation"
+    ],
+    "reverse_depth": 0,
+    "is_non_statement": false,
+    "pagerank": 0.004025036759163374,
+    "function_tag": "result_consolidation"
+  },
+  {
+    "sentence": "**final answer**\n\\boxed{18}",
+    "index": 97,
+    "function_tags": "final_answer_emission",
+    "id": "97",
+    "reverse_depth": 0,
+    "premise_id": [
+      "96"
+    ],
+    "is_non_statement": false,
+    "all_function_tags": [
+      "final_answer_emission"
+    ],
+    "function_tag": "final_answer_emission"
+  }
+]

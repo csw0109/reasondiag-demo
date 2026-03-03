@@ -1,0 +1,1998 @@
+[
+  {
+    "id": "4",
+    "sentence": "The Yankees in 1977 had some famous players like Reggie Jackson, Thurman Munson, Graig Nettles, and Chris Chambliss.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "5",
+    "sentence": "Also, Mickey Rivers and Willie Randolph.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "6",
+    "sentence": "I think Reggie Jackson was known for drawing walks, and he had a high on-base percentage.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "9",
+    "sentence": "I know that the 1977 Yankees won the World Series, and Reggie Jackson was the MVP of that series, but for walks, I'm not sure.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "10",
+    "sentence": "Another player: Lou Piniella?",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "11",
+    "sentence": "But I don't think he walked a lot.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "12",
+    "sentence": "Willie Randolph was a second baseman who had good on-base skills.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "13",
+    "sentence": "I think he might have been among the leaders in walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "15",
+    "sentence": "I think Rod Carew led the league in batting average, but walks?",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "16",
+    "sentence": "I think Jim Rice or someone else.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "17",
+    "sentence": "Actually, I recall that Reggie Jackson had 91 walks in 1977, but I'm not sure.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "17",
+        "target": "37"
+      },
+      {
+        "source": "17",
+        "target": "118"
+      },
+      {
+        "source": "17",
+        "target": "51"
+      },
+      {
+        "source": "17",
+        "target": "93"
+      },
+      {
+        "source": "17",
+        "target": "119"
+      },
+      {
+        "source": "17",
+        "target": "123"
+      },
+      {
+        "source": "17",
+        "target": "131"
+      },
+      {
+        "source": "17",
+        "target": "141"
+      },
+      {
+        "source": "17",
+        "target": "147"
+      },
+      {
+        "source": "17",
+        "target": "150"
+      },
+      {
+        "source": "17",
+        "target": "156"
+      },
+      {
+        "source": "17",
+        "target": "168"
+      },
+      {
+        "source": "17",
+        "target": "170"
+      },
+      {
+        "source": "17",
+        "target": "61"
+      },
+      {
+        "source": "17",
+        "target": "94"
+      },
+      {
+        "source": "17",
+        "target": "96"
+      },
+      {
+        "source": "17",
+        "target": "132"
+      },
+      {
+        "source": "17",
+        "target": "142"
+      },
+      {
+        "source": "17",
+        "target": "148"
+      },
+      {
+        "source": "17",
+        "target": "151"
+      },
+      {
+        "source": "17",
+        "target": "157"
+      },
+      {
+        "source": "17",
+        "target": "172"
+      },
+      {
+        "source": "17",
+        "target": "68"
+      },
+      {
+        "source": "17",
+        "target": "87"
+      },
+      {
+        "source": "17",
+        "target": "100"
+      },
+      {
+        "source": "17",
+        "target": "95"
+      },
+      {
+        "source": "17",
+        "target": "97"
+      },
+      {
+        "source": "17",
+        "target": "133"
+      },
+      {
+        "source": "17",
+        "target": "152"
+      },
+      {
+        "source": "17",
+        "target": "158"
+      },
+      {
+        "source": "17",
+        "target": "173"
+      },
+      {
+        "source": "17",
+        "target": "69"
+      },
+      {
+        "source": "17",
+        "target": "88"
+      },
+      {
+        "source": "17",
+        "target": "105"
+      },
+      {
+        "source": "17",
+        "target": "112"
+      },
+      {
+        "source": "17",
+        "target": "98"
+      },
+      {
+        "source": "17",
+        "target": "134"
+      },
+      {
+        "source": "17",
+        "target": "136"
+      },
+      {
+        "source": "17",
+        "target": "159"
+      },
+      {
+        "source": "17",
+        "target": "174"
+      },
+      {
+        "source": "17",
+        "target": "70"
+      },
+      {
+        "source": "17",
+        "target": "99"
+      },
+      {
+        "source": "17",
+        "target": "135"
+      },
+      {
+        "source": "17",
+        "target": "137"
+      },
+      {
+        "source": "17",
+        "target": "160"
+      },
+      {
+        "source": "17",
+        "target": "138"
+      },
+      {
+        "source": "17",
+        "target": "139"
+      },
+      {
+        "source": "17",
+        "target": "140"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "sentence": "At-bats (AB) and walks (BB) are related.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "22",
+    "sentence": "Walks are not counted as at-bats.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "23",
+    "sentence": "So the number of plate appearances (PA) is AB + BB + other things like HBP, SH, SF, etc.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "24",
+    "sentence": "But for simplicity, PA \u2248 AB + BB for many players, but not always, due to other factors.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "27",
+    "sentence": "Thurman Munson, catcher",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "28",
+    "sentence": "Reggie Jackson, right field",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "29",
+    "sentence": "Chris Chambliss, first base",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "30",
+    "sentence": "Graig Nettles, third base",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "31",
+    "sentence": "Willie Randolph, second base",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "32",
+    "sentence": "Mickey Rivers, center field",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "33",
+    "sentence": "Lou Piniella, left field or DH",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "34",
+    "sentence": "Roy White, outfielder",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "35",
+    "sentence": "Bucky Dent, shortstop\n\nAmong these, who drew the most walks?",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "36",
+    "sentence": "I think Reggie Jackson and Willie Randolph were both good at drawing walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "37",
+    "sentence": "I recall that in 1977, Reggie Jackson had a .286 batting average with 32 home runs and 110 RBIs, and he had 91 walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "17"
+  },
+  {
+    "id": "38",
+    "sentence": "Willie Randolph had a .274 average with 36 walks or something?",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "38",
+        "target": "102"
+      },
+      {
+        "source": "38",
+        "target": "103"
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "sentence": "I remember that the Yankees as a team had a high number of walks, but I need individual.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "42",
+    "sentence": "Another idea: I know that Reggie Jackson was known for his high OBP, so he might have had many walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "44",
+    "sentence": "Perhaps the player with the most walks also had a lot of plate appearances, but not necessarily the most at-bats, since walks reduce at-bats.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "45",
+    "sentence": "In fact, a player with many walks might have fewer at-bats than someone with the same plate appearances but fewer walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "50",
+    "sentence": "I recall that in 1977, the AL leader in walks was Ken Singleton with 123 walks, but he was with the Orioles.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "50",
+        "target": "51"
+      },
+      {
+        "source": "50",
+        "target": "141"
+      },
+      {
+        "source": "50",
+        "target": "61"
+      },
+      {
+        "source": "50",
+        "target": "142"
+      },
+      {
+        "source": "50",
+        "target": "68"
+      },
+      {
+        "source": "50",
+        "target": "87"
+      },
+      {
+        "source": "50",
+        "target": "100"
+      },
+      {
+        "source": "50",
+        "target": "69"
+      },
+      {
+        "source": "50",
+        "target": "88"
+      },
+      {
+        "source": "50",
+        "target": "105"
+      },
+      {
+        "source": "50",
+        "target": "112"
+      },
+      {
+        "source": "50",
+        "target": "70"
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "sentence": "For the Yankees, I think it was Reggie Jackson with 91 walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 1,
+    "prop_pairs": [
+      {
+        "source": "51",
+        "target": "61"
+      },
+      {
+        "source": "51",
+        "target": "68"
+      },
+      {
+        "source": "51",
+        "target": "87"
+      },
+      {
+        "source": "51",
+        "target": "100"
+      },
+      {
+        "source": "51",
+        "target": "69"
+      },
+      {
+        "source": "51",
+        "target": "88"
+      },
+      {
+        "source": "51",
+        "target": "105"
+      },
+      {
+        "source": "51",
+        "target": "112"
+      },
+      {
+        "source": "51",
+        "target": "70"
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "sentence": "I think Thurman Munson had fewer walks; he was more of a contact hitter.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "53",
+    "sentence": "Graig Nettles had power but not high walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "54",
+    "sentence": "Chris Chambliss was similar.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "55",
+    "sentence": "Willie Randolph: I think he had a good OBP, so he might have had more walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "57",
+    "sentence": "I found online in my memory that Willie Randolph had 119 walks in 1980, but in 1977, he was younger.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "58",
+    "sentence": "In 1977, Willie Randolph had 70 walks or something?",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": []
+  },
+  {
+    "id": "60",
+    "sentence": "Perhaps Reggie Jackson led the team.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "61",
+    "sentence": "I think Reggie Jackson had 91 walks in 1977 for the Yankees.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "50"
+  },
+  {
+    "id": "63",
+    "sentence": "Reggie Jackson had 525 at-bats in 1977 with the Yankees.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "66",
+    "sentence": "I know he had 143 games played, and he was a regular, so about 500-600 at-bats.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "66",
+        "target": "67"
+      },
+      {
+        "source": "66",
+        "target": "68"
+      },
+      {
+        "source": "66",
+        "target": "69"
+      },
+      {
+        "source": "66",
+        "target": "70"
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "sentence": "Plate appearances: let's say he had around 600 PA.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "66"
+  },
+  {
+    "id": "68",
+    "sentence": "With 91 walks, then AB = PA - BB - other.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "66"
+  },
+  {
+    "id": "69",
+    "sentence": "Other might be small, so AB \u2248 PA - 91.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 3,
+    "error_source": "66"
+  },
+  {
+    "id": "70",
+    "sentence": "If PA is say 600, AB \u2248 509.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 4,
+    "error_source": "66"
+  },
+  {
+    "id": "73",
+    "sentence": "Another Yankee: Roy White?",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "74",
+    "sentence": "He was older in 1977, but he might have drawn walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "75",
+    "sentence": "I think Roy White had a good eye.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "77",
+    "sentence": "Perhaps the answer is common knowledge for baseball fans.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "78",
+    "sentence": "I recall that Mickey Rivers didn't walk much; he was a speed guy.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "79",
+    "sentence": "Bucky Dent: low walk rate.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "80",
+    "sentence": "Lou Piniella: moderate.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "81",
+    "sentence": "So probably Reggie Jackson or Willie Randolph.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "82",
+    "sentence": "I think Willie Randolph had 77 walks in 1977.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": []
+  },
+  {
+    "id": "85",
+    "sentence": "I remember that the Yankees had a player with over 100 walks?",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "86",
+    "sentence": "No, I don't think so.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "87",
+    "sentence": "Reggie Jackson had 93 walks in 1976 with the Orioles, and in 1977 with the Yankees, he had 91 walks, I think.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 3,
+    "error_source": "50"
+  },
+  {
+    "id": "88",
+    "sentence": "Yes, I believe that's it.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 4,
+    "error_source": "50"
+  },
+  {
+    "id": "89",
+    "sentence": "And at-bats: in 1977, Reggie Jackson had 525 at-bats.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "93",
+    "sentence": "He had a .286 average with 150 hits, so AB = hits / average = 150 / 0.286.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "17"
+  },
+  {
+    "id": "94",
+    "sentence": "Calculate: 150 divided by 0.286.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 3,
+    "error_source": "17"
+  },
+  {
+    "id": "95",
+    "sentence": "0.286 * 525 = let's see, 0.286 * 500 = 143, 0.286*25=7.15, so 143+7.15=150.15, yes, about 525 AB.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 4,
+    "error_source": "17"
+  },
+  {
+    "id": "96",
+    "sentence": "Hits are 150, average .286, so AB = hits / avg = 150 / 0.286.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 3,
+    "error_source": "17"
+  },
+  {
+    "id": "97",
+    "sentence": "0.286 = 286/1000 = 143/500, better to calculate numerically.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 4,
+    "error_source": "17"
+  },
+  {
+    "id": "98",
+    "sentence": "0.286 * AB = 150, so AB = 150 / 0.286 \u2248 524.475, so 525 AB, since it must be integer.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 5,
+    "error_source": "17"
+  },
+  {
+    "id": "99",
+    "sentence": "Yes, 525 AB.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 6,
+    "error_source": "17"
+  },
+  {
+    "id": "100",
+    "sentence": "Now, walks: 91.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 3,
+    "error_source": "50"
+  },
+  {
+    "id": "102",
+    "sentence": "Willie Randolph: in 1977, he had .274 average, 139 hits, so AB = 139 / 0.274.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "38"
+  },
+  {
+    "id": "103",
+    "sentence": "0.274 * AB = 139, AB = 139 / 0.274 \u2248 507.299, so about 507 AB.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "38"
+  },
+  {
+    "id": "104",
+    "sentence": "Walks: I think he had 71 walks or something.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "104",
+        "target": "105"
+      },
+      {
+        "source": "104",
+        "target": "112"
+      }
+    ]
+  },
+  {
+    "id": "105",
+    "sentence": "I think less than Reggie.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "104"
+  },
+  {
+    "id": "106",
+    "sentence": "Thurman Munson: .308 average, 183 hits, AB = 183 / 0.308 \u2248 594 AB.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "107",
+    "sentence": "Walks: I think around 50 or so.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "108",
+    "sentence": "Graig Nettles: .255 average, 132 hits, AB = 132 / 0.255 \u2248 518 AB.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": []
+  },
+  {
+    "id": "109",
+    "sentence": "Walks: maybe 70.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "110",
+    "sentence": "Chris Chambliss: .287 average, 162 hits, AB = 162 / 0.287 \u2248 565 AB.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": []
+  },
+  {
+    "id": "111",
+    "sentence": "Walks: about 60.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "112",
+    "sentence": "So Reggie Jackson with 91 walks seems to be the leader.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "104"
+  },
+  {
+    "id": "114",
+    "sentence": "I recall that in 1977, Willie Randolph had 77 walks, Reggie 91, so Reggie had more.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "114",
+        "target": "115"
+      }
+    ]
+  },
+  {
+    "id": "115",
+    "sentence": "Yes.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "114"
+  },
+  {
+    "id": "117",
+    "sentence": "I think Willie Randolph walked 75 times in 1977.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "118",
+    "sentence": "Reggie 91.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "17"
+  },
+  {
+    "id": "119",
+    "sentence": "Yes.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "17"
+  },
+  {
+    "id": "120",
+    "sentence": "Now, what about Roy White?",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "121",
+    "sentence": "He had 333 at-bats, .268 average, 89 hits, so not many walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "121",
+        "target": "123"
+      }
+    ]
+  },
+  {
+    "id": "122",
+    "sentence": "Lou Piniella: 384 AB, .330 average, 127 hits, not many walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "122",
+        "target": "123"
+      }
+    ]
+  },
+  {
+    "id": "123",
+    "sentence": "So Reggie Jackson had the most walks with 91.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "121"
+  },
+  {
+    "id": "124",
+    "sentence": "At-bats: 525.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "129",
+    "sentence": "Another thought: Mickey Rivers had 433 at-bats, but few walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "129",
+        "target": "131"
+      },
+      {
+        "source": "129",
+        "target": "132"
+      },
+      {
+        "source": "129",
+        "target": "133"
+      },
+      {
+        "source": "129",
+        "target": "134"
+      },
+      {
+        "source": "129",
+        "target": "136"
+      },
+      {
+        "source": "129",
+        "target": "135"
+      },
+      {
+        "source": "129",
+        "target": "137"
+      },
+      {
+        "source": "129",
+        "target": "138"
+      },
+      {
+        "source": "129",
+        "target": "139"
+      },
+      {
+        "source": "129",
+        "target": "140"
+      }
+    ]
+  },
+  {
+    "id": "130",
+    "sentence": "Bucky Dent: 568 AB, .247 average, 140 hits, walks: I think very few, like 40 or so.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "130",
+        "target": "131"
+      },
+      {
+        "source": "130",
+        "target": "132"
+      },
+      {
+        "source": "130",
+        "target": "133"
+      },
+      {
+        "source": "130",
+        "target": "134"
+      },
+      {
+        "source": "130",
+        "target": "136"
+      },
+      {
+        "source": "130",
+        "target": "135"
+      },
+      {
+        "source": "130",
+        "target": "137"
+      },
+      {
+        "source": "130",
+        "target": "138"
+      },
+      {
+        "source": "130",
+        "target": "139"
+      },
+      {
+        "source": "130",
+        "target": "140"
+      }
+    ]
+  },
+  {
+    "id": "131",
+    "sentence": "So yes, Reggie Jackson led with 91 walks and 525 at-bats.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "129"
+  },
+  {
+    "id": "133",
+    "sentence": "But just to be thorough, I think there was Cliff Johnson, who was traded to the Yankees during the season.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 3,
+    "error_source": "129"
+  },
+  {
+    "id": "134",
+    "sentence": "Cliff Johnson came from Houston, and with the Yankees, he had some games.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 4,
+    "error_source": "129"
+  },
+  {
+    "id": "135",
+    "sentence": "In 1977, with Yankees, he had 120 at-bats, 4 walks or something, not many.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 5,
+    "error_source": "129"
+  },
+  {
+    "id": "136",
+    "sentence": "Fran Healy, backup catcher, not many.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 4,
+    "error_source": "129"
+  },
+  {
+    "id": "137",
+    "sentence": "So no.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 5,
+    "error_source": "129"
+  },
+  {
+    "id": "138",
+    "sentence": "Therefore, Reggie Jackson had 525 at-bats.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 6,
+    "error_source": "129"
+  },
+  {
+    "id": "141",
+    "sentence": "I think I recall that in 1977, Reggie Jackson had 91 walks, which was second in the AL to Ken Singleton's 123, but for Yankees, he led.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 1,
+    "prop_pairs": [
+      {
+        "source": "141",
+        "target": "142"
+      }
+    ]
+  },
+  {
+    "id": "142",
+    "sentence": "Yes.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "50"
+  },
+  {
+    "id": "145",
+    "sentence": "But since I can't access, from memory, Willie Randolph in 1977: 512 at-bats, 71 walks?",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "145",
+        "target": "147"
+      },
+      {
+        "source": "145",
+        "target": "148"
+      }
+    ]
+  },
+  {
+    "id": "147",
+    "sentence": "I think 71 is less than 91.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "145"
+  },
+  {
+    "id": "148",
+    "sentence": "Yes.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "145"
+  },
+  {
+    "id": "149",
+    "sentence": "Another player: Graig Nettles had 69 walks in 1977, I believe.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "149",
+        "target": "150"
+      },
+      {
+        "source": "149",
+        "target": "151"
+      },
+      {
+        "source": "149",
+        "target": "152"
+      }
+    ]
+  },
+  {
+    "id": "150",
+    "sentence": "So Reggie had 91.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "149"
+  },
+  {
+    "id": "151",
+    "sentence": "Therefore, at-bats were 525.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "149"
+  },
+  {
+    "id": "152",
+    "sentence": "So the answer should be 525.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 3,
+    "error_source": "149"
+  },
+  {
+    "id": "155",
+    "sentence": "I think Reggie Jackson played 146 games, with 525 at-bats, yes.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Correct",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "156",
+    "sentence": "Plate appearances: 612, with 91 walks, 5 HBP, 4 SH, 2 SF or something, so AB = PA - BB - HBP - SH - SF, approximately.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "156",
+        "target": "157"
+      },
+      {
+        "source": "156",
+        "target": "158"
+      },
+      {
+        "source": "156",
+        "target": "159"
+      },
+      {
+        "source": "156",
+        "target": "160"
+      }
+    ]
+  },
+  {
+    "id": "157",
+    "sentence": "612 - 91 = 521, then minus others, but he had few, so about 525, yes.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "156"
+  },
+  {
+    "id": "158",
+    "sentence": "Officially, 525 AB.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "156"
+  },
+  {
+    "id": "159",
+    "sentence": "So I think that's it.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 3,
+    "error_source": "156"
+  },
+  {
+    "id": "162",
+    "sentence": "Thurman Munson had 58 walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "162",
+        "target": "170"
+      },
+      {
+        "source": "162",
+        "target": "172"
+      },
+      {
+        "source": "162",
+        "target": "173"
+      },
+      {
+        "source": "162",
+        "target": "174"
+      }
+    ]
+  },
+  {
+    "id": "163",
+    "sentence": "Chris Chambliss: 54 walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "163",
+        "target": "170"
+      },
+      {
+        "source": "163",
+        "target": "172"
+      },
+      {
+        "source": "163",
+        "target": "173"
+      },
+      {
+        "source": "163",
+        "target": "174"
+      }
+    ]
+  },
+  {
+    "id": "164",
+    "sentence": "Graig Nettles: 69 walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "164",
+        "target": "170"
+      },
+      {
+        "source": "164",
+        "target": "172"
+      },
+      {
+        "source": "164",
+        "target": "173"
+      },
+      {
+        "source": "164",
+        "target": "174"
+      }
+    ]
+  },
+  {
+    "id": "165",
+    "sentence": "Willie Randolph: 75 walks?",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "165",
+        "target": "166"
+      }
+    ]
+  },
+  {
+    "id": "167",
+    "sentence": "I think Willie Randolph had 75 walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "168",
+    "sentence": "Yes, 75 < 91.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Not checked",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "17"
+  },
+  {
+    "id": "169",
+    "sentence": "Mickey Rivers: 35 walks.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Error",
+    "logic_check_result": null,
+    "has_error": true,
+    "error_type": [
+      "FactError"
+    ],
+    "propagation_layer": 0,
+    "prop_pairs": [
+      {
+        "source": "169",
+        "target": "170"
+      },
+      {
+        "source": "169",
+        "target": "172"
+      },
+      {
+        "source": "169",
+        "target": "173"
+      },
+      {
+        "source": "169",
+        "target": "174"
+      }
+    ]
+  },
+  {
+    "id": "170",
+    "sentence": "So yes, Reggie Jackson had 91, the most.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 1,
+    "error_source": "162"
+  },
+  {
+    "id": "171",
+    "sentence": "At-bats: 525.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": -1
+  },
+  {
+    "id": "172",
+    "sentence": "Therefore, the answer is 525.",
+    "has_fact_check": true,
+    "has_logic_check": false,
+    "fact_check_result": "Duplicate",
+    "logic_check_result": null,
+    "has_error": false,
+    "error_type": [],
+    "propagation_layer": 2,
+    "error_source": "162"
+  }
+]
