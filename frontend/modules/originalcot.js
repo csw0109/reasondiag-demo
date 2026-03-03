@@ -2,40 +2,40 @@
 'use strict';
 import DeepSeekBus from './bus.js';
 import { createElement, typesetMath, formatTagLabel } from './utils.js';
-const STYLE_ID='deepseek-original-cot-style';
+const STYLE_ID = 'deepseek-original-cot-style';
 
-export function ensurePanel(wrapper){
-	if(!wrapper) return null;
-	let panel=wrapper.querySelector('#deepseek-original-cot');
-	if(!panel){
-		panel=createElement?createElement('div',{className:'deepseek-original-cot'}):document.createElement('div');
-		panel.id='deepseek-original-cot';
-        if(!panel.className) panel.className='deepseek-original-cot';
+export function ensurePanel(wrapper) {
+    if (!wrapper) return null;
+    let panel = wrapper.querySelector('#deepseek-original-cot');
+    if (!panel) {
+        panel = createElement ? createElement('div', { className: 'deepseek-original-cot' }) : document.createElement('div');
+        panel.id = 'deepseek-original-cot';
+        if (!panel.className) panel.className = 'deepseek-original-cot';
 
-		const header=document.createElement('div');
-		header.className='deepseek-original-cot-header';
-		const title=document.createElement('span');
-		title.textContent='Original CoT';
-		header.appendChild(title);
+        const header = document.createElement('div');
+        header.className = 'deepseek-original-cot-header';
+        const title = document.createElement('span');
+        title.textContent = 'Original CoT';
+        header.appendChild(title);
 
-		const modeContainer=document.createElement('div');
-		modeContainer.className='deepseek-cot-mode-container';
-		const paragraphBtn=document.createElement('button');
-		paragraphBtn.textContent='Section';
-		paragraphBtn.className='deepseek-cot-mode-btn active';
-		const sentencesBtn=document.createElement('button');
-		sentencesBtn.textContent='Step';
-		sentencesBtn.className='deepseek-cot-mode-btn';
-		modeContainer.appendChild(paragraphBtn);
-		modeContainer.appendChild(sentencesBtn);
-		header.appendChild(modeContainer);
+        const modeContainer = document.createElement('div');
+        modeContainer.className = 'deepseek-cot-mode-container';
+        const paragraphBtn = document.createElement('button');
+        paragraphBtn.textContent = 'Section';
+        paragraphBtn.className = 'deepseek-cot-mode-btn active';
+        const sentencesBtn = document.createElement('button');
+        sentencesBtn.textContent = 'Step';
+        sentencesBtn.className = 'deepseek-cot-mode-btn';
+        modeContainer.appendChild(paragraphBtn);
+        modeContainer.appendChild(sentencesBtn);
+        header.appendChild(modeContainer);
 
         // Add event listeners
         paragraphBtn.addEventListener('click', () => {
             paragraphBtn.classList.add('active');
             sentencesBtn.classList.remove('active');
             const content = panel.querySelector('.deepseek-original-cot-content');
-            if(content){
+            if (content) {
                 content.classList.remove('deepseek-sentences-mode');
             }
         });
@@ -43,12 +43,12 @@ export function ensurePanel(wrapper){
             sentencesBtn.classList.add('active');
             paragraphBtn.classList.remove('active');
             const content = panel.querySelector('.deepseek-original-cot-content');
-            if(content){
+            if (content) {
                 content.classList.add('deepseek-sentences-mode');
                 // Clean whitespace-only text nodes between inline sentence spans for better flex layout
-                Array.from(content.querySelectorAll('.deepseek-content-lines')).forEach(wrapper=>{
-                    Array.from(wrapper.childNodes).forEach(node=>{
-                        if(node.nodeType===3 && !/\S/.test(node.textContent||'')){
+                Array.from(content.querySelectorAll('.deepseek-content-lines')).forEach(wrapper => {
+                    Array.from(wrapper.childNodes).forEach(node => {
+                        if (node.nodeType === 3 && !/\S/.test(node.textContent || '')) {
                             wrapper.removeChild(node);
                         }
                     });
@@ -56,28 +56,28 @@ export function ensurePanel(wrapper){
             }
         });
 
-		const content=document.createElement('div');
-		content.className='deepseek-original-cot-content';
-		content.innerHTML='<div class="deepseek-original-cot-placeholder">Original chain-of-thought not available.</div>';
-		panel.appendChild(header);
-		panel.appendChild(content);
-		panel.style.display='none';
-		panel.setAttribute('aria-hidden','true');
+        const content = document.createElement('div');
+        content.className = 'deepseek-original-cot-content';
+        content.innerHTML = '<div class="deepseek-original-cot-placeholder">Original chain-of-thought not available.</div>';
+        panel.appendChild(header);
+        panel.appendChild(content);
+        panel.style.display = 'none';
+        panel.setAttribute('aria-hidden', 'true');
         wrapper.appendChild(panel);
 
-        if(typeof window!=='undefined'){
-			window.deepseekOriginalCotPanel=panel;
-		}
-	}
-	return panel;
+        if (typeof window !== 'undefined') {
+            window.deepseekOriginalCotPanel = panel;
+        }
+    }
+    return panel;
 }
 
-function injectStyles(){
-	if (document.getElementById(STYLE_ID)) return;
+function injectStyles() {
+    if (document.getElementById(STYLE_ID)) return;
     const style = document.createElement('style');
     style.id = STYLE_ID;
-	style.textContent=`
-		#deepseek-original-cot{flex:0 0 490px;max-width:400px;min-height:160px;max-height:600px; background:transparent;border:none;padding:12px;display:flex;flex-direction:column;gap:8px;box-shadow:none}
+    style.textContent = `
+		#deepseek-original-cot{flex:0 0 490px;max-width:400px;min-height:160px;max-height:750px; background:transparent;border:none;padding:12px;display:flex;flex-direction:column;gap:8px;box-shadow:none}
 		#deepseek-original-cot .deepseek-original-cot-header{display:flex;align-items:center;justify-content:space-between;font-size:12px;font-weight:600;color:#1f2937;text-transform:uppercase;letter-spacing:0.08em;margin:0}
 		#deepseek-original-cot .deepseek-original-cot-content{flex:1 1 auto;overflow-y:auto;overflow-x:hidden;padding:8px;border-radius:6px;background:transparent;font-size:12px;line-height:1.45;color:#475569;border:none;max-height:100%}
 		#deepseek-original-cot .deepseek-original-cot-content::-webkit-scrollbar{width:8px}
@@ -157,32 +157,32 @@ function injectStyles(){
 		.deepseek-node-hit{cursor:pointer}
 		.deepseek-overview-layer, .deepseek-propagation-layer{transition:opacity 0.2s ease}
 	`;
-	document.head.appendChild(style);
+    document.head.appendChild(style);
 }
 
-export function updatePanel(opts){
-	const wrapper=document.getElementById('deepseek-layout-wrapper');
-	const panel=ensurePanel(wrapper);
-	if(!panel) return;
-	const content=panel.querySelector('.deepseek-original-cot-content');
-	const fallback=(opts && typeof opts.fallback==='string' && opts.fallback.trim())?opts.fallback.trim():'Original chain-of-thought not available.';
-	const placeholderHtml=`<div class="deepseek-original-cot-placeholder">${fallback}</div>`;
-	if(opts && Object.prototype.hasOwnProperty.call(opts,'html')){
-		const htmlString=typeof opts.html==='string'?opts.html:'';
-		content.innerHTML= htmlString.trim()?htmlString:placeholderHtml;
-		if(typesetMath) typesetMath([content]);
-	}
-	if(opts && opts.visible===true){ panel.style.display='flex'; panel.setAttribute('aria-hidden','false'); }
-	else if(opts && opts.visible===false){ panel.style.display='none'; panel.setAttribute('aria-hidden','true'); }
+export function updatePanel(opts) {
+    const wrapper = document.getElementById('deepseek-layout-wrapper');
+    const panel = ensurePanel(wrapper);
+    if (!panel) return;
+    const content = panel.querySelector('.deepseek-original-cot-content');
+    const fallback = (opts && typeof opts.fallback === 'string' && opts.fallback.trim()) ? opts.fallback.trim() : 'Original chain-of-thought not available.';
+    const placeholderHtml = `<div class="deepseek-original-cot-placeholder">${fallback}</div>`;
+    if (opts && Object.prototype.hasOwnProperty.call(opts, 'html')) {
+        const htmlString = typeof opts.html === 'string' ? opts.html : '';
+        content.innerHTML = htmlString.trim() ? htmlString : placeholderHtml;
+        if (typesetMath) typesetMath([content]);
+    }
+    if (opts && opts.visible === true) { panel.style.display = 'flex'; panel.setAttribute('aria-hidden', 'false'); }
+    else if (opts && opts.visible === false) { panel.style.display = 'none'; panel.setAttribute('aria-hidden', 'true'); }
 }
 
 function updateHighlights(filterKey) {
     const panel = document.getElementById('deepseek-original-cot');
     if (!panel) return;
-    
+
     const lines = panel.querySelectorAll('.deepseek-content-line');
     const targetLabel = filterKey ? formatTagLabel(filterKey) : null;
-    
+
     lines.forEach(line => {
         const classesToRemove = [];
         line.classList.forEach(cls => {
@@ -191,49 +191,49 @@ function updateHighlights(filterKey) {
             }
         });
         classesToRemove.forEach(c => line.classList.remove(c));
-        
+
         if (targetLabel && line.dataset.tag === targetLabel) {
             line.classList.add(`highlight-${targetLabel}`);
         }
     });
 }
 
-export function renderFromTree(sentenceTree, mode = 'paragraph'){
-    const wrapper=document.getElementById('deepseek-layout-wrapper');
-    const panel=ensurePanel(wrapper);
-    const content=panel.querySelector('.deepseek-original-cot-content');
-	
-    if(!content || !sentenceTree) {
+export function renderFromTree(sentenceTree, mode = 'paragraph') {
+    const wrapper = document.getElementById('deepseek-layout-wrapper');
+    const panel = ensurePanel(wrapper);
+    const content = panel.querySelector('.deepseek-original-cot-content');
+
+    if (!content || !sentenceTree) {
         console.log('[Original CoT Render] Missing required elements, aborting');
         return;
     }
 
     const state = DeepSeekBus.get();
     const currentErrorMap = state.currentErrorMap;
-	const paragraphs = sentenceTree.treeSentences;
+    const paragraphs = sentenceTree.treeSentences;
     const sentenceMap = sentenceTree.byId;
     // Clear previous content
-    content.innerHTML='';
-    
+    content.innerHTML = '';
+
     // Render each paragraph
-    paragraphs.forEach((para)=>{
-        const wrapper=document.createElement('div');
-        wrapper.className='deepseek-content-lines';
-        if(para.id !== undefined && para.id !== null) wrapper.dataset.sectionId = String(para.id);
-        
-        para.children.forEach(item=>{
-            const line=document.createElement('span');
-            line.className='deepseek-content-line';
-            const labelSpan=document.createElement('span');
-            labelSpan.className='deepseek-original-type-label';
-            const tagLabel=formatTagLabel(item.tag || 'Other');
-            labelSpan.dataset.tag=tagLabel;
-            line.dataset.tag=tagLabel;
-            
+    paragraphs.forEach((para) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'deepseek-content-lines';
+        if (para.id !== undefined && para.id !== null) wrapper.dataset.sectionId = String(para.id);
+
+        para.children.forEach(item => {
+            const line = document.createElement('span');
+            line.className = 'deepseek-content-line';
+            const labelSpan = document.createElement('span');
+            labelSpan.className = 'deepseek-original-type-label';
+            const tagLabel = formatTagLabel(item.tag || 'Other');
+            labelSpan.dataset.tag = tagLabel;
+            line.dataset.tag = tagLabel;
+
             // Check if this item has an error
             const itemId = String(item.id);
             const hasError = currentErrorMap && currentErrorMap.has(itemId) && currentErrorMap.get(itemId).has_error;
-            
+
             // Add click handler to show left panel when clicking on error labels
             if (hasError) {
                 labelSpan.style.cursor = 'pointer';
@@ -241,17 +241,17 @@ export function renderFromTree(sentenceTree, mode = 'paragraph'){
                     e.stopPropagation();
                     console.log('[Error Label Click] Showing popout for error item:', itemId);
                     const err = currentErrorMap.get(itemId);
-                    
+
                     // Helper to build tree
                     const buildPremiseTree = (id, visited = new Set()) => {
-                        if(visited.has(id)) return { id, text: 'Cycle detected', children: [] };
+                        if (visited.has(id)) return { id, text: 'Cycle detected', children: [] };
                         visited.add(id);
-                        
+
                         const node = sentenceMap ? sentenceMap.get(String(id)) : null;
                         let text = node ? node.text : id;
                         let pids = node ? (node.premise_id || []) : [];
-                        
-                        if(String(id) === String(itemId)) {
+
+                        if (String(id) === String(itemId)) {
                             text = item.text;
                             pids = item.premise_id || [];
                         }
@@ -262,29 +262,29 @@ export function renderFromTree(sentenceTree, mode = 'paragraph'){
 
                     const premiseTree = buildPremiseTree(itemId);
 
-                    DeepSeekBus.emit('show-error', { 
-                        id: itemId, 
-                        error: err, 
-                        target: labelSpan, 
+                    DeepSeekBus.emit('show-error', {
+                        id: itemId,
+                        error: err,
+                        target: labelSpan,
                         text: item.text,
                         premise_tree: premiseTree
                     });
                 });
             }
-            
-            const inner=document.createElement('span');
-            inner.textContent=tagLabel;
+
+            const inner = document.createElement('span');
+            inner.textContent = tagLabel;
             labelSpan.appendChild(inner);
-            const textSpan=document.createElement('span');
-            textSpan.className='deepseek-content-text';
-            if(item.id!==undefined && item.id!==null){ textSpan.dataset.itemId=String(item.id); }
-            textSpan.textContent=item.text;
-            
+            const textSpan = document.createElement('span');
+            textSpan.className = 'deepseek-content-text';
+            if (item.id !== undefined && item.id !== null) { textSpan.dataset.itemId = String(item.id); }
+            textSpan.textContent = item.text;
+
             // If sentence has error, make text red (softer color)
             if (hasError) {
                 textSpan.style.color = '#b91c1c'; // Softer red color for error text
             }
-            
+
             line.appendChild(labelSpan);
             line.appendChild(textSpan);
             wrapper.appendChild(line);
@@ -293,7 +293,7 @@ export function renderFromTree(sentenceTree, mode = 'paragraph'){
         });
         content.appendChild(wrapper);
     });
-    updatePanel({visible:true});
+    updatePanel({ visible: true });
     const currentState = DeepSeekBus.get();
     if (currentState.annotationFilter) {
         updateHighlights(currentState.annotationFilter);
@@ -321,7 +321,7 @@ function scrollToItem(itemId, type) {
     if (!target) {
         // Try section first
         target = content.querySelector(`.deepseek-content-lines[data-section-id="${itemId}"]`);
-        
+
         // Then item
         if (!target) {
             const targetSpan = content.querySelector(`.deepseek-content-text[data-item-id="${itemId}"]`);
@@ -334,7 +334,7 @@ function scrollToItem(itemId, type) {
     if (target) {
         // Scroll into view
         target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        
+
         // Add a temporary flash highlight
         target.classList.add('deepseek-highlight-flash');
         setTimeout(() => {
