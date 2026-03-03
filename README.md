@@ -1,58 +1,34 @@
 # paper-demo
 
-用于论文展示的纯前端静态 Demo，可直接部署到 GitHub Pages。
+This repository hosts the static frontend demo for the paper:  
+**"When the Chain Breaks: Interactive Diagnosis of LLM Chain-of-Thought Reasoning Errors"**
 
-## Demo 内容
-- Case 1：基础静态网页示例
-- Case 2：基于 `frontend` 改造的前端 Demo（默认本地 mock 数据，无需后端）
+## Abstract
+Current Large Language Models (LLMs), especially Large Reasoning Models, can generate Chain-of-Thought (CoT) reasoning traces to illustrate how they produce final outputs, thereby mitigating the interpretability issues of LLMs to some extent. However, these CoT reasoning traces are usually lengthy and tedious, and can contain various issues, such as logical and factual errors, which make it difficult for users to interpret the reasoning traces efficiently and accurately. To address these challenges, we develop an error detection pipeline that combines external fact-checking with symbolic formal logical validation to identify errors at the step level. Building on this pipeline, we propose ReasonDiag, an interactive visualization system for diagnosing CoT reasoning traces. ReasonDiag provides 1) an integrated arc diagram to show reasoning-step distributions and error-propagation patterns, and 2) a hierarchical node-link diagram to visualize high-level reasoning flows and premise dependencies. We evaluate ReasonDiag through a technical evaluation for the error detection pipeline, two case studies, and user interviews with 16 participants. The results indicate that ReasonDiag helps users effectively understand CoT reasoning traces, identify erroneous steps, and determine their root causes.
 
-发布后入口：
-- `/` → 总入口页
-- `/cases/case-1/` → Case 1
-- `/cases/case-2/` → Case 2
+## Demo 内容 (Demo Content)
+You can directly access the interactive systems associated with the case studies presented in the research:
 
-## 项目结构
+- **Case 1：基础核心推演 (Basic Trace Evaluation)**  
+  [访问入口 (Access Link)](src/index.html)
+- **Case 2：ReasonDiag 分析平台展示 (The ReasonDiag Interactive Interface)**  
+  [访问入口 (Access Link)](frontend/deepseek_ui.html)
+
+或者直接访问 **总入口展示页** (Home Page): [index.html](index.html)
+
+## 项目结构 (Project Structure)
 ```
 paper-demo/
 ├── .github/workflows/deploy.yml
-├── docs/
-│   ├── index.html
-│   └── cases/
-│       ├── case-1/
-│       └── case-2/
-├── frontend/
-└── src/
+├── index.html       # 论文展示总入口 (Home Page)
+├── data/            # 数据内容集 (case1/ 与 case2/ 数据)
+├── frontend/        # Case 2 前端模块 (ReasonDiag Demo)
+└── src/             # Case 1 传统界面展示模块
 ```
 
-## 本地预览
-直接用浏览器打开以下文件之一：
-- `docs/index.html`
-- `docs/cases/case-1/index.html`
-- `docs/cases/case-2/index.html`
+## GitHub Pages Deployment
+本项目支持 GitHub Pages 的静态部署，发布配置已集成至 `.github/workflows/deploy.yml`。
+（默认由 GitHub Actions 将全量静态数据构建与推送部署。）
 
-## GitHub Pages 部署（推荐：GitHub Actions 自动部署）
-本仓库已包含工作流：`.github/workflows/deploy.yml`，会在 push 到 `main` 后自动发布 `docs/`。
-
-### 1) 推送代码
-```bash
-git add .
-git commit -m "setup static paper demo"
-git push origin main
-```
-
-### 2) 开启 Pages
-1. 进入仓库 `Settings` → `Pages`
-2. `Build and deployment` 里选择 `Source: GitHub Actions`
-
-### 3) 查看发布结果
-发布成功后访问：
-`https://<你的用户名>.github.io/<你的仓库名>/`
-
-## 备用部署方式（不走 Actions）
-你也可以在 `Settings` → `Pages` 里改为：
-- `Source: Deploy from a branch`
-- `Branch: main`
-- `Folder: /docs`
-
-## 许可证
+## License
 MIT
