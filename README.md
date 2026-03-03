@@ -10,11 +10,11 @@ Current Large Language Models (LLMs), especially Large Reasoning Models, can gen
 You can directly access the interactive systems associated with the case studies presented in the research:
 
 - **Case 1：Diagnose Error Cause and Reasoning Patterns**  
-  [Access Link](frontend/case1/deepseek_ui.html)
+  [Access Link](https://csw0109.github.io/reasondiag-demo/frontend/case1/deepseek_ui.html)
 - **Case 2: Diagnose Illusory Truth and Logical Gaps**  
-  [Access Link](frontend/case2/deepseek_ui.html)
+  [Access Link](https://csw0109.github.io/reasondiag-demo/frontend/case2/deepseek_ui.html)
 
-Or you can directly access the **Home Page**: [index.html](index.html)
+Or you can directly access the **Home Page**: [index.html](https://csw0109.github.io/reasondiag-demo/)
 
 ## Project Structure
 ```
