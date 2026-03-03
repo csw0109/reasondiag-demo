@@ -244,17 +244,18 @@ function mount() {
         }
         // Restore visibility
         reasonBody.style.display = '';
-        const bubbleContainer = Utils.getBubbleContainer(reasonBody) || reasonBody.parentElement || reasonBody;
 
         try {
-            const controls = bubbleContainer.querySelector('.deepseek-tree-controls');
+            const reasondiag = document.getElementById('deepseek-content-wrapper');
+            if (reasondiag) reasondiag.remove();
+            const controls = document.querySelector('.deepseek-tree-controls');
             if (controls) controls.remove();
-            const overview = bubbleContainer.querySelector('.deepseek-tree-overview');
+            const overview = document.querySelector('.deepseek-tree-overview');
             if (overview) overview.remove();
             // Remove the left panel when restoring original view
-            const layoutWrapper = reasonBody.closest('#deepseek-layout-wrapper, .deepseek-layout-wrapper');
+            const layoutWrapper = document.querySelector('#deepseek-layout-wrapper, .deepseek-layout-wrapper');
             if (layoutWrapper) {
-                const leftPanel = layoutWrapper.querySelector('#deepseek-left-panel, .deepseek-left-panel');
+                const leftPanel = document.querySelector('#deepseek-left-panel, .deepseek-left-panel');
                 if (leftPanel) {
                     leftPanel.remove();
                 }
