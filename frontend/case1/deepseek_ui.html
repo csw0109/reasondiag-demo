@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>DeepSeek — Chat UI</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
+	<script>
+		window.MathJax = {
+			tex: { inlineMath: [["$", "$"], ["\\(", "\\)"]], displayMath: [["$$", "$$"], ["\\[", "\\]"]] },
+			svg: { fontCache: 'global' }
+		};
+	</script>
+	<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js"></script>
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<!-- <script src="./deepseek_plugin.js" defer></script> -->
+	<script type="module" src="./plugin.js"></script>
+	<style>
+		:root {
+			--bg: #f6f8fa;
+			--panel: #ffffff;
+			--muted: #64748b;
+			/* gray text */
+			--accent: #e3ebfb;
+			--accent-2: #7aa2ff;
+			--words: #3d3e43;
+			/* --words:#364ae6; */
+			--sidebar: #f1f5f9;
+			--shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
+			--glass: rgba(255, 255, 255, 0.6);
+			--radius: 12px;
+			--mono: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+			font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+			color: #0f172a;
+			background: var(--bg)
+		}
+
+		.app {
+			display: flex;
+			height: 100vh;
+			overflow: hidden
+		}
+
+		/* Sidebar */
+		.sidebar {
+			width: 200px;
+			background: var(--sidebar);
+			padding: 18px 14px;
+			border-right: 1px solid rgba(15, 23, 42, 0.04);
+			display: flex;
+			flex-direction: column;
+			gap: 12px
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			padding: 6px 8px
+		}
+
+		.logo .mark {
+			width: 36px;
+			height: 36px;
+			border-radius: 10px;
+			background: var(--accent);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: var(--words);
+			font-weight: 700
+		}
+
+		.logo .brand {
+			font-weight: 700;
+			color: #0f172a
+		}
+
+		.new-chat {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			padding: 10px 12px;
+			border-radius: 999px;
+			background: transparent;
+			border: 1px solid rgba(15, 23, 42, 0.06);
+			cursor: pointer;
+			font-weight: 500;
+			color: #0f172a
+		}
+
+		.new-chat i {
+			font-size: 18px;
+			color: var(--words)
+		}
+
+		.chat-list {
+			flex: 1;
+			overflow: auto;
+			padding-right: 4px;
+			scrollbar-width: none;
+			-ms-overflow-style: none
+		}
+
+		.chat-list::-webkit-scrollbar {
+			display: none
+		}
+
+		.chat-item {
+			padding: 10px;
+			border-radius: 10px;
+			color: #0f172a;
+			display: flex;
+			flex-direction: column;
+			gap: 6px
+		}
+
+		.chat-item.active {
+			background: rgba(43, 110, 246, 0.08)
+		}
+
+		.chat-title {
+			font-size: 15px;
+			font-weight: 400
+		}
+
+		.chat-meta {
+			font-size: 12px;
+			color: var(--muted)
+		}
+
+		/* Main column */
+		.main {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: relative
+		}
+
+		.topbar {
+			height: 72px;
+			display: flex;
+			align-items: center;
+			justify-content: center
+		}
+
+		.topbar .center-title {
+			font-weight: 600
+		}
+
+		.content {
+			width: 100%;
+			flex: 1;
+			padding: 12px 40px 120px 40px;
+			overflow: auto;
+			scrollbar-width: none;
+			-ms-overflow-style: none
+		}
+
+		/* Message rows */
+		.content::-webkit-scrollbar {
+			display: none
+		}
+
+		.msg-row {
+			display: flex;
+			align-items: flex-start;
+			gap: 14px;
+			margin: 18px 0
+		}
+
+		.msg-row.right {
+			justify-content: flex-end
+		}
+
+		/* .avatar{width:40px;height:40px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:700} */
+
+		.bubble {
+			max-width: 1100px;
+			padding: 14px 16px;
+			border-radius: 12px;
+			background: var(--bg);
+			border: 1px solid #f6f8fa
+		}
+
+		/* .bubble.user{background:#dbeeff;color:#0f172a;border-radius:18px} */
+
+		/* Thought header & body */
+		.reason-header {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			margin-bottom: 0px
+		}
+
+		.reason-sigil {
+			width: 22px;
+			height: 22px;
+			border-radius: 6px;
+			background: var(--bg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: var(--words);
+			font-size: 12px
+		}
+
+		.reason-sigil i {
+			font-size: 24px
+		}
+
+		.reason-title {
+			font-weight: 300;
+			color: var(--muted)
+		}
+
+		.reason-caret {
+			margin-left: 8px;
+			color: var(--muted);
+			cursor: pointer;
+			font-size: 16px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 22px;
+			height: 22px;
+			padding: 0;
+			border: none;
+			background: transparent
+		}
+
+		.reason-caret:focus {
+			outline: none
+		}
+
+		.reason-body {
+			background: transparent;
+			border-radius: 12px;
+			padding: 16px 18px;
+			color: var(--muted)
+		}
+
+		.indent-tree {
+			position: relative;
+			padding: 6px 0 6px 34px;
+			margin: 0;
+			line-height: 1.8
+		}
+
+		.indent-tree::before {
+			content: "";
+			position: absolute;
+			left: 16px;
+			top: 40px;
+			bottom: 24px;
+			width: 1px;
+			background: rgba(100, 116, 139, 0.25)
+		}
+
+		.indent-entry {
+			position: relative;
+			padding-left: 12px;
+			margin: px 0;
+			color: var(--muted)
+		}
+
+		.indent-entry::before {
+			content: "";
+			position: absolute;
+			left: -21px;
+			top: 8px;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: rgba(100, 116, 139, 0.6)
+		}
+
+		.indent-entry.indent-no-node::before {
+			display: none
+		}
+
+		.indent-text {
+			font-size: 14px;
+			line-height: 1.8;
+			white-space: pre-wrap
+		}
+
+		.answer-strong {
+			margin-top: 8px;
+			white-space: pre-wrap;
+			line-height: 1.7
+		}
+
+		/* reaction icons row */
+		.reactions {
+			display: flex;
+			gap: 8px;
+			margin-top: 12px;
+			color: var(--muted);
+			align-items: center
+		}
+
+		.icon-btn {
+			background: transparent;
+			border: 0;
+			cursor: pointer;
+			color: var(--muted);
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 28px;
+			height: 28px;
+			border-radius: 8px;
+			transition: background 0.2s ease, color 0.2s ease
+		}
+
+		.icon-btn:hover {
+			background: rgba(43, 110, 246, 0.08);
+			color: var(--accent)
+		}
+
+		.icon-btn i {
+			font-size: 18px
+		}
+
+		/* Composer */
+		.composer-wrap {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 18px;
+			width: min(820px, 90%);
+			padding: 12px;
+			z-index: 100
+		}
+
+		.composer {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			background: var(--panel);
+			border-radius: 999px;
+			padding: 12px 14px;
+			border: 1px solid rgba(15, 23, 42, 0.04);
+			box-shadow: var(--shadow)
+		}
+
+		.pill {
+			padding: 8px 12px;
+			border-radius: 999px;
+			border: 1px solid rgba(15, 23, 42, 0.06);
+			background: transparent;
+			color: var(--muted);
+			cursor: pointer
+		}
+
+		.pill.active {
+			background: var(--accent);
+			color: var(--words);
+			border: 1px solid var(--words)
+		}
+
+		.input {
+			flex: 1;
+			border-radius: 999px;
+			padding: 12px 14px;
+			border: 1px solid rgba(15, 23, 42, 0.03);
+			background: #fbfdff
+		}
+
+		.attach {
+			color: var(--muted)
+		}
+
+		.send {
+			margin-left: 6px;
+			background: var(--accent);
+			color: var(--words);
+			border: 0;
+			width: 42px;
+			height: 42px;
+			border-radius: 999px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			transition: transform 0.2s ease
+		}
+
+		.send:hover {
+			transform: translateY(-1px)
+		}
+
+		.send i {
+			font-size: 20px;
+			color: inherit
+		}
+
+		/* small user bubble (right) style */
+		.mini-wrapper {
+			width: 100%;
+			display: flex;
+			justify-content: flex-end;
+			margin-left: auto;
+			max-width: 520px
+		}
+
+		.mini-bubble {
+			background: #eaf2ff;
+			padding: 15px 15px;
+			border-radius: 22px;
+			display: inline-block;
+			white-space: pre-wrap;
+			line-height: 1.6;
+			max-width: 100%;
+			font-size: 14px
+		}
+
+		/* .mini-bubble .mini-icons{margin-top:10px;color:var(--muted);font-size:14px} */
+
+		.math-block {
+			border-radius: 10px;
+			font-family: var(--mono);
+			white-space: pre-wrap;
+			display: block;
+			color: #1e293b;
+			font-size: 14px;
+			margin: 2px 0
+		}
+
+		.math-block mjx-container[jax="SVG"][display="true"] {
+			margin: 0 !important
+		}
+
+		/* footer logo/avatar */
+		.sidebar .me {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			padding: 8px;
+			border-top: 1px solid rgba(15, 23, 42, 0.03)
+		}
+
+		/* Scrolling tweaks */
+
+		@media (max-width:1000px) {
+			.sidebar {
+				display: none
+			}
+
+			.content {
+				width: 100%
+			}
+
+			.composer-wrap {
+				width: 96%
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="app">
+		<aside class="sidebar">
+			<div class="logo">
+				<div class="mark">LM</div>
+				<div class="brand">Language model</div>
+			</div>
+
+			<button class="new-chat" id="loadJsonBtn" type="button"><i class="ri-add-line"
+					aria-hidden="true"></i><span>Load JSON</span></button>
+			<!-- <button class="pill" id="loadJsonBtn" type="button">Load JSON</button> -->
+
+			<div class="chat-list" id="chatList">
+				<div class="chat-item active">
+					<div class="chat-title">New chat</div>
+					<div class="chat-meta">Today</div>
+				</div>
+			</div>
+
+			<div class="me">
+				<div
+					style="width:34px;height:34px;border-radius:999px;background:#0d9567;display:flex;align-items:center;justify-content:center;color:white">
+					U</div>
+				<div class="muted">User</div>
+			</div>
+		</aside>
+
+		<main class="main">
+			<div class="topbar">
+				<div class="center-title">New chat</div>
+			</div>
+
+			<div class="content" id="content">
+				<!-- right-side user mini bubble -->
+				<div class="msg-row right">
+					<div class="mini-wrapper">
+						<div class="mini-bubble" id="questionBubble">Loading question…</div>
+						<!-- <div class="mini-bubble mini-icons">   </div> -->
+					</div>
+				</div>
+
+				<!-- assistant reasoning message -->
+				<div class="msg-row">
+					<!-- <div class="avatar">🔍</div> -->
+					<div class="bubble">
+						<div class="reason-header">
+							<div class="reason-sigil"><i class="ri-brain-line" aria-hidden="true"></i></div>
+							<div>
+								<div class="reason-title">Thought for 65 seconds</div>
+							</div>
+							<button class="reason-caret" id="caret" type="button" aria-label="Toggle reasoning"><i
+									class="ri-arrow-down-s-line" aria-hidden="true"></i></button>
+						</div>
+						<div class="reason-body indent-tree" id="reasonBody">
+							<div class="indent-entry">
+								<div class="indent-text">Reasoning trace will appear here once JSON loads.</div>
+							</div>
+							<div class="indent-entry indent-no-node">
+								<div class="indent-text">Subsequent steps will replace this placeholder.</div>
+							</div>
+							<div class="indent-entry indent-no-node">
+								<div class="indent-text">Each reasoning sentence is sourced from the JSON file.</div>
+							</div>
+							<div class="indent-entry indent-no-node">
+								<div class="indent-text">The default JSON will override these values.</div>
+							</div>
+						</div>
+
+						<div class="answer-strong" id="answerStrong">Loading final answer…</div>
+
+						<div class="reactions">
+							<button class="icon-btn" type="button" title="Copy reasoning"><i class="ri-file-copy-line"
+									aria-hidden="true"></i></button>
+							<button class="icon-btn" type="button" title="Mark helpful"><i class="ri-thumb-up-line"
+									aria-hidden="true"></i></button>
+							<button class="icon-btn" type="button" title="Share"><i class="ri-share-forward-line"
+									aria-hidden="true"></i></button>
+							<button class="icon-btn" type="button" title="More actions"><i class="ri-more-2-line"
+									aria-hidden="true"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="composer-wrap">
+				<div class="composer">
+					<!-- <button class="pill" id="loadJsonBtn" type="button">Load JSON</button> -->
+					<input id="composerInput" class="input" placeholder="Display-only demo input" />
+					<input id="jsonFileInput" type="file" accept="application/json" hidden />
+					<button class="send" type="button" aria-label="Send message"><i class="ri-arrow-right-line"
+							aria-hidden="true"></i></button>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<script>
+		const caret = document.getElementById('caret');
+		const reasonBody = document.getElementById('reasonBody');
+		const loadJsonBtn = document.getElementById('loadJsonBtn');
+		const jsonFileInput = document.getElementById('jsonFileInput');
+		const questionBubble = document.getElementById('questionBubble');
+		const answerStrong = document.getElementById('answerStrong');
+		const DEFAULT_JSON_ENDPOINT = '../../data/case1/DeltaBench_sample_8.json';
+
+		let open = true;
+
+		function escapeHtml(str) {
+			if (typeof str !== 'string') return '';
+			return str.replace(/[&<>"']/g, function (ch) {
+				switch (ch) {
+					case '&': return '&amp;';
+					case '<': return '&lt;';
+					case '>': return '&gt;';
+					case '"': return '&quot;';
+					case "'": return '&#39;';
+					default: return ch;
+				}
+			});
+		}
+
+		function renderRichText(target, raw) {
+			if (!target) return;
+			if (typeof raw !== 'string') {
+				target.textContent = '';
+				return;
+			}
+			const normalizeText = (text) => {
+				return text
+					.replace(/\r\n/g, '\n')
+					.replace(/\\n(?![a-zA-Z])/g, '\n');
+			};
+			const normalized = normalizeText(raw);
+			const wrapInlineLatex = (text) => {
+				if (typeof text !== 'string' || !text.includes('\\')) return text;
+				const inlinePattern = /\\[a-zA-Z]{2,}(?:\[[^\]]*\])?(?:\{[^{}]*\})*/g;
+				return text.replace(inlinePattern, (match) => `\\(${match}\\)`);
+			};
+			const segments = [];
+			const pattern = /\$\$(.*?)\$\$/gs;
+			let lastIndex = 0;
+			let match;
+			while ((match = pattern.exec(normalized)) !== null) {
+				if (match.index > lastIndex) {
+					segments.push({ type: 'text', value: normalized.slice(lastIndex, match.index) });
+				}
+				segments.push({ type: 'math', value: match[1] });
+				lastIndex = match.index + match[0].length;
+			}
+			if (lastIndex < normalized.length) {
+				segments.push({ type: 'text', value: normalized.slice(lastIndex) });
+			}
+			const html = segments.map((segment) => {
+				if (segment.type === 'math') {
+					return `<div class="math-block">\\[${escapeHtml(segment.value)}\\]</div>`;
+				}
+				const withInline = wrapInlineLatex(segment.value);
+				return escapeHtml(withInline).replace(/\n/g, '<br>');
+			}).join('');
+			target.innerHTML = html;
+			if (window.MathJax && window.MathJax.typesetPromise) {
+				window.MathJax.typesetPromise([target]).catch((err) => {
+					console.error('MathJax typeset failed', err);
+				});
+			}
+		}
+
+		function showReasonMessage(message) {
+			if (!reasonBody) return;
+			reasonBody.innerHTML = '';
+			const entry = document.createElement('div');
+			entry.className = 'indent-entry indent-no-node';
+			const text = document.createElement('div');
+			text.className = 'indent-text';
+			renderRichText(text, message);
+			entry.appendChild(text);
+			reasonBody.appendChild(entry);
+			reasonBody.style.display = 'block';
+		}
+
+		function extractEntries(payload) {
+			if (!payload) return [];
+			if (Array.isArray(payload)) return payload;
+			if (Array.isArray(payload.sentences)) return payload.sentences;
+			if (Array.isArray(payload.data)) return payload.data;
+			if (Array.isArray(payload.results)) return payload.results;
+			if (typeof payload.reasoning_content === 'string') {
+				return payload.reasoning_content
+					.split(/\n\s*\n+/)
+					.map(chunk => chunk.trim())
+					.filter(Boolean)
+					.map(text => ({ sentence: text }));
+			}
+			return [];
+		}
+
+		function renderReasoning(entries) {
+			if (!reasonBody) return;
+			if (!Array.isArray(entries) || entries.length === 0) {
+				showReasonMessage('No sentences available to display.');
+				return;
+			}
+			reasonBody.innerHTML = '';
+			let appendedCount = 0;
+			entries.forEach((item) => {
+				const sentence = typeof item === 'string' ? item : (item && item.sentence);
+				if (!sentence) return;
+				const entry = document.createElement('div');
+				entry.className = appendedCount === 0 ? 'indent-entry' : 'indent-entry indent-no-node';
+				const text = document.createElement('div');
+				text.className = 'indent-text';
+				renderRichText(text, sentence);
+				entry.appendChild(text);
+				reasonBody.appendChild(entry);
+				appendedCount += 1;
+			});
+			if (appendedCount === 0) {
+				showReasonMessage('No sentences available to display.');
+				return;
+			}
+			reasonBody.style.display = 'block';
+			open = true;
+			if (caret) {
+				caret.innerHTML = '<i class="ri-arrow-down-s-line" aria-hidden="true"></i>';
+			}
+		}
+
+		async function loadJson(source) {
+			try {
+				let payload;
+				if (source instanceof File) {
+					const text = await source.text();
+					payload = JSON.parse(text);
+				} else if (typeof source === 'string') {
+					const response = await fetch(source);
+					if (!response.ok) throw new Error('Network request failed');
+					payload = await response.json();
+				} else if (source && typeof source === 'object') {
+					payload = source;
+				} else {
+					throw new Error('Unsupported JSON source');
+				}
+				const entries = extractEntries(payload);
+				renderReasoning(entries);
+				if (payload && typeof payload.question === 'string' && questionBubble) {
+					renderRichText(questionBubble, payload.question);
+				}
+				if (payload && typeof payload.content === 'string' && answerStrong) {
+					console.log('Rendering answer:', payload.content);
+					renderRichText(answerStrong, payload.content);
+				}
+			} catch (error) {
+				const message = error && error.message ? error.message : 'Unknown error';
+				showReasonMessage(`Unable to load JSON: ${message}`);
+			}
+		}
+
+		if (loadJsonBtn && jsonFileInput) {
+			loadJsonBtn.addEventListener('click', (event) => {
+				if (event.altKey || event.metaKey) {
+					loadJson(DEFAULT_JSON_ENDPOINT);
+					return;
+				}
+				jsonFileInput.click();
+			});
+			jsonFileInput.addEventListener('change', (event) => {
+				const file = event.target && event.target.files ? event.target.files[0] : null;
+				if (file) {
+					loadJson(file);
+				}
+				event.target.value = '';
+			});
+		}
+
+		if (caret && reasonBody) {
+			caret.addEventListener('click', () => {
+				open = !open;
+				reasonBody.style.display = open ? 'block' : 'none';
+				caret.innerHTML = open ? '<i class="ri-arrow-down-s-line" aria-hidden="true"></i>' : '<i class="ri-arrow-right-s-line" aria-hidden="true"></i>';
+			});
+		}
+
+		const content = document.getElementById('content');
+		if (content) {
+			content.scrollTop = content.scrollHeight;
+		}
+
+		window.loadJson = loadJson;
+		loadJson(DEFAULT_JSON_ENDPOINT);
+	</script>
+
+</body>
+
+</html>
