@@ -1,4 +1,4 @@
-# paper-demo
+# ReasonDiag
 
 This repository hosts the static frontend demo for the paper:  
 **"When the Chain Breaks: Interactive Diagnosis of LLM Chain-of-Thought Reasoning Errors"**
